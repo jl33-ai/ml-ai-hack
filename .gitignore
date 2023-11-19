@@ -1,0 +1,14 @@
+# Ignore all log files
+*.log
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore compiled binary files
+*.class
+*.exe
+*.dll
+
+# Ignore system files
+.DS_Store
+Thumbs.db
