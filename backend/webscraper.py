@@ -77,19 +77,20 @@ def ptv_disruptions(news=False):
         )
         accordion_button.click()
         print("Click successful")
-
+        html_content = driver.page_source
+        raw_html = Bs(html_content, 'html.parser')
+        
         # text processing
-        raw_html = soup_maker(disruption_url)
         # print(raw_html)
-        # if raw_html:
-        #     print("Data scraped")
-        #     # distruption_list = raw_html.find(id={"accordion-2"})
-        # #     print(distruption_list)
-        #     for disruption in raw_html.find_all("li"):
-        #         print(disruption.content)
-        # else:
-        #     print("Error")
-        print(raw_html.findAll("li"))
+        if raw_html:
+            live_updates = raw_html.find("div", class_={"accordion LiveTravelUpdates__accordion"})
+            # print(live_updates)
+            for update in live_updates.findAll("li"):
+                print(update.text)
+                print("-------------------------------")
+        else:
+            print("Error")
+        
 
     finally:
         # Close the WebDriver
