@@ -1,15 +1,27 @@
-document.getElementById('send-btn').addEventListener('click', function() {
+document.getElementById('send-btn').addEventListener('click', async () => {
     const inputField = document.getElementById('chat-input');
     const userText = inputField.value.trim();
-
+  
     if (userText) {
-        addChat(userText, "user");
-        inputField.value = ''; // Clear the input field
-        getResponse(userText); // Function to handle the response
+      // Add user's text to the chat window
+      addChatMessage(userText, 'user');
+      inputField.value = '';
+  
+      // Send the user's text to your server
+      const response = await fetch('/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ userInput: userText }),
+      });
+  
+      const data = await response.json();
+      addChatMessage(data.message, 'bot'); // Add the bot's response to the chat window
     }
-});
+  });
 
-function addChat(text, sender) {
+function addChatMessage(text, sender) {
     const chatBox = document.getElementById('chat-box');
     const newMessage = document.createElement('div');
     newMessage.textContent = text;
@@ -37,3 +49,5 @@ async function getResponse(userInput) {
         console.error('Error fetching the response: ', error);
     }
 }
+
+
