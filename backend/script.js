@@ -5,12 +5,10 @@ document.getElementById('send-btn').addEventListener('click', async () => {
     if (userText) {
       // Add user's text to the chat window
       addChatMessage(userText, 'user');
-      addChatMessage("Hi there, this is a bot response.", 'bot');
-
       inputField.value = '';
   
-      // Send the user's text to your server with a timeout
-      const responsePromise = fetch('/chat', {
+      // Send the user's text to your server
+      const response = await fetch('/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -18,22 +16,9 @@ document.getElementById('send-btn').addEventListener('click', async () => {
         body: JSON.stringify({ userInput: userText }),
       });
   
-      // Set a timeout for 10 seconds
-      const timeoutPromise = new Promise((resolve) => {
-        setTimeout(() => {
-          resolve({ message: 'Load took too long' });
-        }, 10000); // 10000 milliseconds (10 seconds)
-      });
-  
-      // Use Promise.race to get the first resolved promise (either response or timeout)
-      const result = await Promise.race([responsePromise, timeoutPromise]);
-  
-      if (result.message === 'Load took too long') {
-        addChatMessage(result.message, 'bot'); // Display timeout message
-      } else {
-        const data = await result.json();
-        addChatMessage(data.message, 'bot'); // Add the bot's response to the chat window
-      }
+      const data = await response.json();
+      addChatMessage(data.message, 'bot'); // Add the bot's response to the chat window
+      // addChatMessage('echo', 'bot') // Test
     }
   });
   
