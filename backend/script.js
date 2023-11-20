@@ -17,8 +17,23 @@ function addChat(text, sender) {
     chatBox.appendChild(newMessage);
 }
 
-function getResponse(userInput) {
-    // Placeholder for sending request to your server or OpenAI's API
-    // For now, we'll just echo the user input
-    setTimeout(() => { addChat("Echo: " + userInput, "bot"); }, 1000);
+async function getResponse(userInput) {
+    try {
+        const response = await fetch('/ask', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ question: userInput }),
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        addChat(data.answer, "bot");
+    } catch (error) {
+        console.error('Error fetching the response: ', error);
+    }
 }

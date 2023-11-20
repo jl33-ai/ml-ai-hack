@@ -1,17 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'CMU Serif', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333333; /* Assuming this is the dark gray sampled from the logo */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #EB0029; /* Red color sampled from the PTV logo */
+    color: #ffffff; /* White text */
     padding: 10px 0;
     text-align: center;
 }
+
 
 header nav ul {
     padding: 0;
@@ -44,7 +45,7 @@ footer {
 
 
 #chat-container {
-    width: 300px;
+    width: 500px;
     margin: 0 auto;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -74,10 +75,13 @@ footer {
 }
 
 .user {
-    background-color: blue;
+    background-color: #EB0029; /* Red color for the user chat bubble */
     align-self: flex-end;
+    color: white; /* White text on red background */
 }
 
 .bot {
-    background-color: green;
+    background-color: #333333; /* Dark gray for the bot chat bubble */
+    color: white; /* White text on dark background */
 }
+
