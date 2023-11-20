@@ -32,6 +32,8 @@ document.getElementById('send-btn').addEventListener('click', async () => {
         const data = await result.json();
         addChatMessage(data.message, 'bot'); // Add the bot's response to the chat window
       }
+      addChatMessage("TESTTT", "Bot");
+
     }
   });
   
