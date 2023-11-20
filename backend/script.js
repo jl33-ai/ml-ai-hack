@@ -7,6 +7,7 @@ document.getElementById('send-btn').addEventListener('click', async () => {
       addChatMessage(userText, 'user');
       inputField.value = '';
   
+     /*
       // Send the user's text to your server
       const response = await fetch('/chat', {
         method: 'POST',
@@ -15,9 +16,11 @@ document.getElementById('send-btn').addEventListener('click', async () => {
         },
         body: JSON.stringify({ userInput: userText }),
       });
+      */
   
-      const data = await response.json();
-      addChatMessage(data.message, 'bot'); // Add the bot's response to the chat window
+      //const data = await response.json();
+      //addChatMessage(data.message, 'bot'); // Add the bot's response to the chat window
+      addChatMessage('echo', 'bot')
     }
   });
 
