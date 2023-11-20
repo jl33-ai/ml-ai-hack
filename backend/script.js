@@ -5,6 +5,7 @@ document.getElementById('send-btn').addEventListener('click', async () => {
     if (userText) {
       // Add user's text to the chat window
       addChatMessage(userText, 'user');
+      addChatMessage("TESTTT", "bot");
       inputField.value = '';
   
       // Send the user's text to your server with a timeout
@@ -32,8 +33,6 @@ document.getElementById('send-btn').addEventListener('click', async () => {
         const data = await result.json();
         addChatMessage(data.message, 'bot'); // Add the bot's response to the chat window
       }
-      addChatMessage("TESTTT", "Bot");
-
     }
   });
   
