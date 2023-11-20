@@ -9,8 +9,9 @@ app.use(express.json()); // for parsing application/json
 app.post('/chat', async (req, res) => {
   try {
     const userInput = req.body.userInput;
-    const response = await agent(userInput);
-    res.json({ message: response });
+    //const response = await agent(userInput);
+    const fixedResponse = "This is a test response message";
+    res.json({ message: fixedResponse });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -19,4 +20,3 @@ app.post('/chat', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
-
