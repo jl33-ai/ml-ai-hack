@@ -5,7 +5,8 @@ document.getElementById('send-btn').addEventListener('click', async () => {
     if (userText) {
       // Add user's text to the chat window
       addChatMessage(userText, 'user');
-      addChatMessage("TESTTT", "bot");
+      addChatMessage("Hi there, this is a bot response.", 'bot');
+
       inputField.value = '';
   
       // Send the user's text to your server with a timeout
