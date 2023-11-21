@@ -54,7 +54,7 @@ def soup_maker(url):
 function to call information for distruptions
 Call depending on live update or current daily updates
 """
-def ptv_disruptions(news=False):
+def ptv_disruptions(news=False, debug=False):
 
     disruption_url = "https://www.ptv.vic.gov.au/disruptions/disruptions-information/#"
 
@@ -85,9 +85,11 @@ def ptv_disruptions(news=False):
         if raw_html:
             live_updates = raw_html.find("div", class_={"accordion LiveTravelUpdates__accordion"})
             # print(live_updates)
-            for update in live_updates.findAll("li"):
+            updates_list = live_updates.findAll("li")
+            for update in updates_list  :
                 print(update.text)
                 print("-------------------------------")
+            return updates_list
         else:
             print("Error")
         
