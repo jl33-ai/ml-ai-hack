@@ -136,6 +136,63 @@ def select_transport_option(option):
         # Close the WebDriver
         driver.quit()
 
+# Weather data
+# Melbourne lat and long 37.8136, 144.9631
+def get_weather(api_key, city="Melbourne", country="AU", forcast=False, current_weather=True):
+    # base_url = "http://api.openweathermap.org/data/2.5/weather"
+    geo_loc = f"http://api.openweathermap.org/geo/1.0/direct?q={city},Victoria,AU&limit=5&appid={api_key}"
+    geo_loc_request = requests.get(geo_loc)
+    if geo_loc_request.status_code == 200:
+        geo_data = geo_loc_request.json()
+        lat = geo_data[-1]["lat"]
+        lon = geo_data[-1]["lon"]
+    else:
+        print("Error fetching location")
+
+    weather_url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={api_key}"
+    # Note for forcast, require pro version
+    forcast_url = f"https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={api_key}"
+    if current_weather:
+        response = requests.get(weather_url)
+
+        if response.status_code == 200:
+            data = response.json()
+            main = data['main']
+            temperature = main['temp']
+            humidity = main['humidity']
+            weather_description = data['weather'][0]['description']
+
+            print(f"Weather in {city}: {weather_description}")
+            print(f"Temperature: {temperature}°C")
+            print(f"Humidity: {humidity}%")
+        else:
+            print("Error fetching weather data")
+    forcast = False
+    print(forcast_url)
+    if forcast:
+        print(forcast_url)
+        response_forcast = requests.get(forcast_url)
+
+        if response_forcast.status_code == 200:
+            data = response_forcast.json()
+            main = data['main']
+            temperature = main['temp']
+            humidity = main['humidity']
+            weather_description = data['weather'][0]['description']
+
+            print(f"Weather in {city}: {weather_description}")
+            print(f"Temperature: {temperature}°C")
+            print(f"Humidity: {humidity}%")
+        else:
+            print("Error fetching forcast data")
+
+# Replace 'your_api_key' with your actual OpenWeatherMap API key
+api_key = '54eb710c29de0ff841c5889195af540d'
+
+get_weather(api_key, current_weather=False)
+
+
+
 
 # ptv_disruptions()
-ptv_disruptions(transport_option="bus")
+# ptv_disruptions(transport_option="bus")
