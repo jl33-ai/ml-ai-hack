@@ -151,7 +151,7 @@ def get_weather(api_key, city="Melbourne", country="AU", forcast=False, current_
 
     weather_url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={api_key}"
     # Note for forcast, require pro version
-    forcast_url = f"https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={api_key}"
+    forcast_url = f"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={api_key}"
     if current_weather:
         response = requests.get(weather_url)
 
@@ -167,29 +167,31 @@ def get_weather(api_key, city="Melbourne", country="AU", forcast=False, current_
             print(f"Humidity: {humidity}%")
         else:
             print("Error fetching weather data")
-    forcast = False
-    print(forcast_url)
+    
     if forcast:
-        print(forcast_url)
+        
         response_forcast = requests.get(forcast_url)
 
         if response_forcast.status_code == 200:
+            # Get weather forcast every 3 hours for next 12 hours
             data = response_forcast.json()
-            main = data['main']
-            temperature = main['temp']
-            humidity = main['humidity']
-            weather_description = data['weather'][0]['description']
+            main = data["list"][:4]
+            # Wondering if I should just chuck the raw json into the LLM and let it figure out the data
+            # for forcast_point in main:
+            #     temperature = forcast_point["main"]['temp']
+            #     humidity = main['humidity']
+            #     weather_description = data['weather'][0]['description']
 
-            print(f"Weather in {city}: {weather_description}")
-            print(f"Temperature: {temperature}°C")
-            print(f"Humidity: {humidity}%")
+            #     print(f"Weather in {city}: {weather_description}")
+            #     print(f"Temperature: {temperature}°C")
+            #     print(f"Humidity: {humidity}%")
         else:
             print("Error fetching forcast data")
 
 # Replace 'your_api_key' with your actual OpenWeatherMap API key
 api_key = '54eb710c29de0ff841c5889195af540d'
 
-get_weather(api_key, current_weather=False)
+get_weather(api_key, current_weather=False, forcast=True)
 
 
 
