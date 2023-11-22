@@ -44,6 +44,7 @@ headers = {
                        'Chrome/75.0.3770.142 Safari/537.36'
     }
 
+# run when using selenium
 driver = webdriver.Chrome()
 
 """
@@ -63,26 +64,8 @@ def ptv_disruptions(news=False, transport_option="train"):
 
     disruption_url = "https://www.ptv.vic.gov.au/disruptions/disruptions-information/#"
 
-    # Set the location of the Opera Browser
-    # options = webdriver.ChromeOptions()
-    # options.binary_location = 'path/to/your/opera.exe'  # Example: 'C:/Program Files/Opera/launcher.exe'
-
-    # Initialize the WebDriver with the specified option
-
-    # driver.get(disruption_url)
-
     # Depending on the transport type affects distruption
     select_transport_option(transport_option)
-
-
-    # raw_html = soup_maker(disruption_url)
-    # if raw_html:
-    #     print("Data scraped")
-    #     distruption_list = raw_html.find(id={"accordion-2"})
-    #     print(distruption_list)
-        # for disruption in distruption_list.find_all("li"):
-            
-        #     print(disruption.content)
 
     return "Error occured in data extraction"
 
@@ -188,13 +171,55 @@ def get_weather(api_key, city="Melbourne", country="AU", forcast=False, current_
         else:
             print("Error fetching forcast data")
 
+# Site to scrape the train station data, only need to run once
+def train_station_data():
+    station_url = "https://en.wikipedia.org/wiki/List_of_Metro_Trains_Melbourne_railway_stations"
+    soup = soup_maker(station_url)
+    # webscraping doesn't seem to work, trying to pen the site
+    driver.get(station_url)
+    time.sleep(1)
+    html_content = driver.page_source
+    raw_html = Bs(html_content, 'html.parser')
+
+    # print(raw_html)
+    table_data = raw_html.find("table", class_="wikitable sortable mw-collapsible sticky-header jquery-tablesorter mw-made-collapsible")
+    # table_data = soup.findAll("table")
+    rows = table_data.find_all("tr")
+    print(table_data.find("tbody"))
+    # rows[0] is the header column, typically ignore, just need the titles
+
+    # Headers for data
+    """
+    Name
+
+    Image
+
+    Transport
+    connections
+
+
+    Service(s)
+
+    Distance from Southern Cross[4]
+
+    Zone(s)
+
+    Date opened[5]
+
+    Suburb
+
+    Notes
+    [5]
+    """
+
+    # if rows:
+    #     print(rows)
+            
+
 # Replace 'your_api_key' with your actual OpenWeatherMap API key
 api_key = '54eb710c29de0ff841c5889195af540d'
 
-get_weather(api_key, current_weather=False, forcast=True)
-
-
-
-
+# get_weather(api_key, current_weather=False, forcast=True)
 # ptv_disruptions()
 # ptv_disruptions(transport_option="bus")
+train_station_data()
