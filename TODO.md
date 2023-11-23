@@ -11,7 +11,10 @@ https://github.com/Lewington-pitsos/ouchcover
 ## Functions 
         - [ ] Disruptions API
         - [ ] Whats on Melb
-        - [ ] OpenWeather
+        - [x] Current location via IP address
+        - [x] preamble
+        - [x] OpenWeather
+          - [ ] implement more relevant data
         - [ ] Specific route plan 
         - [ ] Annoyance Score
 
