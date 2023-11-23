@@ -9,10 +9,10 @@ DETAILS = [
             "type": "object",
             "properties": {
                 "latitude": {
-                    "type": "float",
+                    "type": "string",
                 },
                 "longitude": {
-                    "type": "float",
+                    "type": "string",
                 }
             },
             "required": ["latitude", "longitude"]
@@ -42,6 +42,7 @@ def getStartingLocation():
     return response['latitude'], response['longitude']
 
 def getCurrentWeather(latitude, longitude):
+    latitude, longitude = float(latitude), float(longitude)
     return requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=apparent_temperature&hourly=apparent_temperature").json()
 
 def getServiceInfo():
