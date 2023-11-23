@@ -44,7 +44,12 @@ headers = {
                        'Chrome/75.0.3770.142 Safari/537.36'
     }
 
+<<<<<<< HEAD
 driver = webdriver.Chrome()
+=======
+# run when using selenium
+# driver = webdriver.Chrome()
+>>>>>>> b9471ff19d7df8668a0a595dc9e2e243fe57e99e
 
 """
 Function to make all generic request calls
@@ -63,6 +68,7 @@ def ptv_disruptions(news=False, transport_option="train"):
 
     disruption_url = "https://www.ptv.vic.gov.au/disruptions/disruptions-information/#"
 
+<<<<<<< HEAD
     # Set the location of the Opera Browser
     # options = webdriver.ChromeOptions()
     # options.binary_location = 'path/to/your/opera.exe'  # Example: 'C:/Program Files/Opera/launcher.exe'
@@ -104,6 +110,31 @@ def select_transport_option(option):
         print("Invalid option")
         return
 
+=======
+    # Depending on the transport type affects distruption
+    select_transport_option(transport_option)
+
+    return "Error occured in data extraction"
+
+
+def select_transport_option(option):
+    print(f"Getting distruption data for {option}")
+    driver.get('https://www.ptv.vic.gov.au/disruptions/disruptions-information/')
+    option_ids = {
+        "train": "tabtitle-0",
+        "tram": "tabtitle-1",
+        "bus": "tabtitle-2",
+        "vline": "tabtitle-3"
+    }
+    # Waiting for page to load
+    time.sleep(2)
+
+    button_id = option_ids.get(option.lower())
+    if not button_id:
+        print("Invalid option")
+        return
+
+>>>>>>> b9471ff19d7df8668a0a595dc9e2e243fe57e99e
     try:
         button = driver.find_element(By.ID, button_id)
         button.click()
@@ -136,6 +167,93 @@ def select_transport_option(option):
         # Close the WebDriver
         driver.quit()
 
+# Weather data
+# Melbourne lat and long 37.8136, 144.9631
+def get_weather(api_key, city="Melbourne", country="AU", forcast=False, current_weather=True):
+    # base_url = "http://api.openweathermap.org/data/2.5/weather"
+    geo_loc = f"http://api.openweathermap.org/geo/1.0/direct?q={city},Victoria,AU&limit=5&appid={api_key}"
+    geo_loc_request = requests.get(geo_loc)
+    if geo_loc_request.status_code == 200:
+        geo_data = geo_loc_request.json()
+        lat = geo_data[-1]["lat"]
+        lon = geo_data[-1]["lon"]
+    else:
+        print("Error fetching location")
 
+    weather_url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={api_key}"
+    # Note for forcast, require pro version
+    forcast_url = f"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={api_key}"
+    if current_weather:
+        response = requests.get(weather_url)
+
+        if response.status_code == 200:
+            data = response.json()
+            main = data['main']
+            temperature = main['temp']
+            humidity = main['humidity']
+            weather_description = data['weather'][0]['description']
+
+            print(f"Weather in {city}: {weather_description}")
+            print(f"Temperature: {temperature}°C")
+            print(f"Humidity: {humidity}%")
+        else:
+            print("Error fetching weather data")
+    
+    if forcast:
+        
+        response_forcast = requests.get(forcast_url)
+
+        if response_forcast.status_code == 200:
+            # Get weather forcast every 3 hours for next 12 hours
+            data = response_forcast.json()
+            main = data["list"][:4]
+            # Wondering if I should just chuck the raw json into the LLM and let it figure out the data
+            # for forcast_point in main:
+            #     temperature = forcast_point["main"]['temp']
+            #     humidity = main['humidity']
+            #     weather_description = data['weather'][0]['description']
+
+            #     print(f"Weather in {city}: {weather_description}")
+            #     print(f"Temperature: {temperature}°C")
+            #     print(f"Humidity: {humidity}%")
+        else:
+            print("Error fetching forcast data")
+
+<<<<<<< HEAD
 # ptv_disruptions()
 ptv_disruptions(transport_option="bus")
+=======
+"""
+Scrapes whats on melb
+"""
+def melb_events():
+    url = "https://whatson.melbourne.vic.gov.au/search/things-to-do"
+    base_url = "https://whatson.melbourne.vic.gov.au/"
+    soup = soup_maker(url)
+    event_list = soup.find("div", class_="list-module-contents list-results")
+    event_list = event_list.find_all("div", class_="page-preview fill-height preview-type-list-square")
+    for event in event_list:
+        try:
+            event_html = event.find("a", class_="main-link")
+            # print(event_html.find("data-gtm-variable-label"))
+            title = event_html.find("h2", class_="title").text
+            summary = event.find("p", class_="summary").text
+            event_link = event.find("a")
+            event_link = f"{base_url}{event_link.get('href')}"
+            event_time = event_html.find("time").text
+            event_type = event.find("ul", class_="tag-list").text
+        except:
+            pass
+            # print("Not event")
+        
+        
+
+# Replace 'your_api_key' with your actual OpenWeatherMap API key
+api_key = '54eb710c29de0ff841c5889195af540d'
+
+melb_events()
+# get_weather(api_key, current_weather=False, forcast=True)
+# ptv_disruptions()
+# ptv_disruptions(transport_option="bus")
+
+>>>>>>> b9471ff19d7df8668a0a595dc9e2e243fe57e99e
