@@ -187,7 +187,7 @@ def melb_events():
             title = event_html.find("h2", class_="title").text
             summary = event.find("p", class_="summary").text
             event_link = event.find("a")
-            event_link = f"{base_url}{event_link.get("href")}"
+            event_link = f"{base_url}{event_link.get('href')}"
             event_time = event_html.find("time").text
             event_type = event.find("ul", class_="tag-list").text
         except:
