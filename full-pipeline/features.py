@@ -4,7 +4,10 @@ import requests
 DETAILS = [
     {
         "name": "getCurrentWeather",
-        "description": "Get the current weather in a given location given in latitude and longitude",
+        "description": '''Get current and future apparent temperature,
+                          max UV index for the day, 
+                          and hourly precipitation probability 
+                          (Probability of precipitation with more than 0.1 mm of the preceding hour)''',
         "parameters": {
             "type": "object",
             "properties": {
@@ -43,7 +46,7 @@ def getStartingLocation():
 
 def getCurrentWeather(latitude, longitude):
     latitude, longitude = float(latitude), float(longitude)
-    return requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=apparent_temperature&hourly=apparent_temperature").json()
+    return requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=apparent_temperature&hourly=apparent_temperature&hourly=precipitation_probabiliy&daily=uv_index_max").json()
 
 # placeholder feature
 # def getServiceInfo():
