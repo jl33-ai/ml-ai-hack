@@ -27,8 +27,8 @@ if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
     response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages, functions=features.DETAILS)
-
-    finish_reason, message = response['choices']['0']
+    st.text(response['choices'][0])
+    finish_reason, i, message = response['choices'][0]
 
     # model wants to utilise a custom feature
     if (finish_reason == "function_call"):
@@ -36,7 +36,7 @@ if prompt := st.chat_input():
 
         for _i in range(NUM_ITERS):
             response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=feature_responses, functions=features.DETAILS)
-            finish_reason, msg = response['choices']['0']
+            finish_reason, i, msg = response['choices'][0]
 
             match finish_reason:
                 case 'function_call':
