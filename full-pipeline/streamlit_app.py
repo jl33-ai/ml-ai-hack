@@ -1,7 +1,7 @@
 import streamlit as st, os, openai, features, json
 from dotenv import load_dotenv
 
-NUM_ITERS = 5
+NUM_ITERS = 3
 
 # Load the .env file
 load_dotenv()
@@ -26,7 +26,7 @@ for msg in st.session_state.messages:
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
-    
+
     feature_responses = st.session_state.messages
 
     # check if model wants to utilise a custom feature
@@ -49,11 +49,11 @@ if prompt := st.chat_input():
 
                 # new message generated from feature output
                 feature_responses.append({"role": "function", "name": desired_feature['name'], "content": "Result = " + str(feature_response)})
+            
+            # features not needed to answer query/all relevant features utilised
             case 'stop':
-                feature_responses.append(message)
+                # feature-enriched answer is what the user wants
+                text = feature_responses[-1]['content']
+                st.session_state.messages.append({"role": "assistant", "content": text})
+                st.chat_message("assistant").write(text)
                 break
-
-    # feature-enriched answer is what the user wants
-    text = feature_responses[-1]['content']
-    st.session_state.messages.append({"role": "assistant", "content": text})
-    st.chat_message("assistant").write(text)
