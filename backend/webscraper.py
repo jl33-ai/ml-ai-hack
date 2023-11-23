@@ -45,7 +45,7 @@ headers = {
     }
 
 # run when using selenium
-driver = webdriver.Chrome()
+# driver = webdriver.Chrome()
 
 """
 Function to make all generic request calls
@@ -171,11 +171,35 @@ def get_weather(api_key, city="Melbourne", country="AU", forcast=False, current_
         else:
             print("Error fetching forcast data")
 
-            
+"""
+Scrapes whats on melb
+"""
+def melb_events():
+    url = "https://whatson.melbourne.vic.gov.au/search/things-to-do"
+    base_url = "https://whatson.melbourne.vic.gov.au/"
+    soup = soup_maker(url)
+    event_list = soup.find("div", class_="list-module-contents list-results")
+    event_list = event_list.find_all("div", class_="page-preview fill-height preview-type-list-square")
+    for event in event_list:
+        try:
+            event_html = event.find("a", class_="main-link")
+            # print(event_html.find("data-gtm-variable-label"))
+            title = event_html.find("h2", class_="title").text
+            summary = event.find("p", class_="summary").text
+            event_link = event.find("a")
+            event_link = f"{base_url}{event_link.get("href")}"
+            event_time = event_html.find("time").text
+            event_type = event.find("ul", class_="tag-list").text
+        except:
+            pass
+            # print("Not event")
+        
+        
 
 # Replace 'your_api_key' with your actual OpenWeatherMap API key
 api_key = '54eb710c29de0ff841c5889195af540d'
 
+melb_events()
 # get_weather(api_key, current_weather=False, forcast=True)
 # ptv_disruptions()
 # ptv_disruptions(transport_option="bus")
