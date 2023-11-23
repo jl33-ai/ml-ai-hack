@@ -19,4 +19,8 @@ app.post('/chat', async (req, res) => {
 
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
-});
+}); 
+
+// Google cloud for deployment
+// Ports 
+// 

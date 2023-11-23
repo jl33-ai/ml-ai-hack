@@ -7,7 +7,7 @@ import OpenAI from "openai";
 // Add more API's
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: "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",
     dangerouslyAllowBrowser: true,
 });
 
@@ -77,8 +77,7 @@ const messages = [{
 }];
 
 async function agent(userInput) {
-    return 'You said' + userInput;
-    /*
+    //return 'You said' + userInput;
     messages.push({
         role: "user",
         content: userInput,
@@ -117,9 +116,9 @@ async function agent(userInput) {
         }
     }
     return "The maximum number of iterations has been met without a suitable answer. Please try again with a more specific input.";
-    */
+    
 }
 
 export { agent };
 
-//agent("Please explain to me how I can get from my current location to the CBD, and whether I need to bring an umbrella.");
+agent("Please explain to me how I can get from my current location to the CBD, and whether I need to bring an umbrella.");

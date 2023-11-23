@@ -15,8 +15,10 @@ document.getElementById('send-btn').addEventListener('click', async () => {
         },
         body: JSON.stringify({ userInput: userText }),
       });
+
       addChatMessage('I should be responding soon...', 'bot');
       const data = await response.json();
+      
       addChatMessage(data.message, 'bot'); // Add the bot's response to the chat window
       // addChatMessage('echo', 'bot') // Test
     }
