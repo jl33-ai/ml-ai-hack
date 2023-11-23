@@ -27,7 +27,7 @@ if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 
-    feature_responses = st.session_state.messages
+    feature_responses = st.session_state.messages.copy()
 
     # check if model wants to utilise a custom feature
     for _i in range(NUM_ITERS):
