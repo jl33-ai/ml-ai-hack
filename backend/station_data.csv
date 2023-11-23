@@ -1,0 +1,272 @@
+,station_name,image_of_station,transport_connection,services,distance_from_sX_km,distance_from_sX_mi,zone,date_opened,suburb,notes
+0,Aircraft,//upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Aircraft_Station_%282%29.jpg/100px-Aircraft_Station_%282%29.jpg,['bus'],Werribee,22.23,13.81,2,7 March 1925,Laverton,Rebuilt in 2022
+1,Alamein,//upload.wikimedia.org/wikipedia/commons/thumb/1/13/Alamein_station_2008.JPG/100px-Alamein_station_2008.JPG,[],Alamein,16.12,10.02,1,28 June 1948,Ashburton,
+2,Albion,//upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Albion_railway_station_platform_1%2C_2013.JPG/100px-Albion_railway_station_platform_1%2C_2013.JPG,['bus'],Sunbury,13.65,8.48,"['1', '2\n']",5 January 1860,Albion,Formerly Albion and Darlington
+3,Alphington,//upload.wikimedia.org/wikipedia/commons/thumb/8/81/AlphingtonStation.JPG/100px-AlphingtonStation.JPG,['bus'],Hurstbridge,10.46,6.50,1,8 May 1888,Alphington,
+4,Altona,//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Altona_Station_%283%29.jpg/100px-Altona_Station_%283%29.jpg,['bus'],Werribee,17.15,10.66,"['1', '2\n']",22 August 1888,Altona,Formerly Altona Beach. Rebuilt in 1917
+5,Anstey,//upload.wikimedia.org/wikipedia/commons/thumb/3/39/Anstey_Station_Oct_2019_01.jpg/100px-Anstey_Station_Oct_2019_01.jpg,"['tram', 'bus']",Upfield,8.04,5.00,1,15 December 1926,Brunswick,
+6,Armadale,//upload.wikimedia.org/wikipedia/commons/thumb/6/65/ArmadaleTrainStation.jpg/100px-ArmadaleTrainStation.jpg,"['tram', 'bus']",Frankston,8.67,5.39,1,7 May 1879,Armadale,
+7,Ascot Vale,//upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Overview_of_Ascot_Vale_railway_station%2C_Melbourne.jpg/100px-Overview_of_Ascot_Vale_railway_station%2C_Melbourne.jpg,"['tram', 'bus']",Craigieburn,5.81,3.61,1,1 November 1860,Ascot Vale,
+8,Ashburton,//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ashburton_Station_2.jpg/100px-Ashburton_Station_2.jpg,['bus'],Alamein,15.39,9.56,1,30 May 1890,Ashburton,Formerly Norwood
+9,Aspendale,//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Station_aspendale_1.jpg/100px-Station_aspendale_1.jpg,['bus'],Frankston,30.31,18.83,1,c. April 1891,Aspendale,Formerly Aspendale Park Race-Course
+10,Auburn,//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Auburn-towards-city-2.jpg/100px-Auburn-towards-city-2.jpg,['bus'],AlameinBelgraveLilydale,8.96,5.57,1,3 April 1882,Hawthorn East,Formerly Auburn Road
+11,Balaclava,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/Balaclava_station_.jpg/100px-Balaclava_station_.jpg,['tram'],Sandringham,9.08,5.64,1,19 December 1859,Balaclava,Upgraded in 2014
+12,Batman,//upload.wikimedia.org/wikipedia/commons/thumb/5/59/Batman_Station_%282%29.jpg/100px-Batman_Station_%282%29.jpg,['bus'],Upfield,11.23,6.98,"['1', '2\n']",8 October 1889,Coburg North,Formerly Bell Park
+13,Baxter,//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Baxter_railway_station%2C_Melbourne.jpg/100px-Baxter_railway_station%2C_Melbourne.jpg,['bus'],Stony Point,51.97,32.29,2,1 October 1888,Baxter,Formerly Mornington Junction
+14,Bayswater,//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bayswater_Railway_Station.jpg/100px-Bayswater_Railway_Station.jpg,['bus'],Belgrave,30.76,19.11,2,4 December 1889,Bayswater,Rebuilt in 2016
+15,Beaconsfield,//upload.wikimedia.org/wikipedia/commons/thumb/2/22/BeaconsfieldStation.jpg/100px-BeaconsfieldStation.jpg,['bus'],Pakenham,46.99,29.20,2,1 December 1879,Beaconsfield,
+16,Belgrave,//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Belgrave_Railway_Station_Buildings.jpg/100px-Belgrave_Railway_Station_Buildings.jpg,['bus'],Belgrave,42.53,26.43,2,18 December 1900,Belgrave,Formerly Monbulk. Originally narrow gauge
+17,Bell,//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Bell_Railway_Station_rebuild.jpg/100px-Bell_Railway_Station_rebuild.jpg,['bus'],Mernda,11.70,7.27,1,8 October 1889,Preston,Formerly Preston – Bell Street. Rebuilt in 2022
+18,Bentleigh,//upload.wikimedia.org/wikipedia/commons/thumb/8/88/New_Bentleigh_Railway_Station.jpg/100px-New_Bentleigh_Railway_Station.jpg,['bus'],Frankston,16.47,10.23,"['1', '2\n']",19 December 1881,Bentleigh,Formerly East Brighton. Rebuilt in 2016
+19,Berwick,//upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Berwick_railway_station%2C_Melbourne.JPG/100px-Berwick_railway_station%2C_Melbourne.JPG,['bus'],PakenhamTraralgon,44.58,27.70,2,8 October 1877,Berwick,
+20,Bittern,//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Railline-bittern.jpg/100px-Railline-bittern.jpg,['bus'],Stony Point,68.67,42.67,2,17 September 1889,Bittern,
+21,Blackburn,//upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Blackburn_station.jpg/100px-Blackburn_station.jpg,['bus'],BelgraveLilydale,18.67,11.60,2,25 December 1882,Blackburn,
+22,Bonbeach,//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Bonbeach_Northbound_View.JPG/100px-Bonbeach_Northbound_View.JPG,[],Frankston,34.61,21.51,2,15 February 1926,Bonbeach,Rebuilt in 2021
+23,Boronia,//upload.wikimedia.org/wikipedia/commons/thumb/0/01/Boronia1.jpg/100px-Boronia1.jpg,['bus'],Belgrave,33.38,20.74,2,16 June 1920,Boronia,Rebuilt in 1998
+24,Box Hill,//upload.wikimedia.org/wikipedia/commons/thumb/5/55/Box_Hill_Station.jpg/100px-Box_Hill_Station.jpg,"['tram', 'bus']",BelgraveLilydale,16.16,10.04,2,1 December 1882,Box Hill,
+25,Brighton Beach,//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Brighton_Beach_Station.jpg/100px-Brighton_Beach_Station.jpg,['bus'],Sandringham,15.97,9.92,"['1', '2\n']",21 December 1861,Brighton,Formerly Beach
+26,Broadmeadows,//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Suburban_platforms_at_Broadmeadows_station%2C_Melbourne.jpg/100px-Suburban_platforms_at_Broadmeadows_station%2C_Melbourne.jpg,['bus'],"show
+5 Services
+AlburyCraigieburn NSW TrainLink Southern SeymourShepparton",16.85,10.47,2,1 February 1873,Broadmeadows,
+27,Brunswick,//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Brunswickrailwaystation.jpg/100px-Brunswickrailwaystation.jpg,"['tram', 'bus']",Upfield,7.31,4.54,1,9 September 1884,Brunswick,
+28,Burnley,//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Burnley_Railway_Station.jpg/100px-Burnley_Railway_Station.jpg,['tram'],AlameinBelgraveGlen WaverleyLilydale,5.33,3.31,1,1 May 1880,Burnley,Formerly Burnley Street
+29,Burwood,//upload.wikimedia.org/wikipedia/commons/thumb/a/af/Burwood_Railway_Station_Platform_View.jpg/100px-Burwood_Railway_Station_Platform_View.jpg,['tram'],Alamein,14.17,8.80,1,30 May 1890,Glen Iris,Formerly Hartwell
+30,Camberwell,//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Camberwell_station_Melbourne_-_Burke_Road_end.jpg/100px-Camberwell_station_Melbourne_-_Burke_Road_end.jpg,"['tram', 'bus']",AlameinBelgraveLilydale,10.21,6.34,1,3 April 1882,Camberwell,
+31,Canterbury,//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Canberbury_Railway_Station.jpg/100px-Canberbury_Railway_Station.jpg,['bus'],BelgraveLilydale,12.19,7.57,"['1', '2\n']",1 December 1882,Canterbury,
+32,Cardinia Road,//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cardinia_Road_2012-07-22_06.jpg/100px-Cardinia_Road_2012-07-22_06.jpg,['bus'],Pakenham,53.80,33.43,2,22 April 2012[46],Pakenham,
+33,Carnegie,//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/New_Carnegie_railway_station_on_the_18-06-2018_%282%29.jpg/100px-New_Carnegie_railway_station_on_the_18-06-2018_%282%29.jpg,['bus'],CranbournePakenham,13.54,8.41,1,14 May 1879,Carnegie,Formerly Rosstown. Rebuilt in 2018
+34,Carrum,//upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Carrum_Station_Platforms_in_March_2020_%281%29.jpg/100px-Carrum_Station_Platforms_in_March_2020_%281%29.jpg,['bus'],Frankston,36.10,22.43,2,1 August 1882,Carrum,Rebuilt in 2020
+35,Caulfield,//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Caulfield_railway_station_-_Melbourne.jpg/100px-Caulfield_railway_station_-_Melbourne.jpg,"['tram', 'bus']",CranbourneFrankstonPakenhamTraralgon,11.79,7.33,1,7 May 1879,Caulfield East,
+36,Chatham,//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Chatham_Railway_Station.jpg/100px-Chatham_Railway_Station.jpg,[],BelgraveLilydale,12.95,8.05,"['1', '2\n']",1 April 1927,Surrey Hills,
+37,Chelsea,//upload.wikimedia.org/wikipedia/commons/thumb/0/08/Chelseastationphoto.jpg/100px-Chelseastationphoto.jpg,['bus'],Frankston,33.37,20.74,2,4 February 1907,Chelsea,Rebuilt in 2021
+38,Cheltenham,//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Cheltenham_Station_Platforms_Melbourne_2020-11-07.jpg/100px-Cheltenham_Station_Platforms_Melbourne_2020-11-07.jpg,['bus'],Frankston,22.32,13.87,2,19 December 1881,Cheltenham,Rebuilt in 2020
+39,Clayton,//upload.wikimedia.org/wikipedia/commons/thumb/1/17/New_Clayton_railway_station_April_2018.jpg/100px-New_Clayton_railway_station_April_2018.jpg,['bus'],CranbournePakenhamTraralgon,20.51,12.74,2,6 January 1880,Clayton,Formerly Clayton's Road. Rebuilt in 2018
+40,Clifton Hill,//upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Clifton_Hill_Station_Platform_2%2C_looking_north.jpg/100px-Clifton_Hill_Station_Platform_2%2C_looking_north.jpg,['bus'],HurstbridgeMernda,6.60,4.10,1,8 May 1888,Clifton Hill,
+41,Coburg,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Coburg_Northbound_View.JPG/100px-Coburg_Northbound_View.JPG,['bus'],Upfield,10.12,6.29,1,9 September 1884,Coburg,Rebuilt in 2020
+42,Collingwood,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Collingwood_railway_station.jpg/100px-Collingwood_railway_station.jpg,['bus'],HurstbridgeMernda,4.83,3.00,1,21 October 1901,Abbotsford,
+43,Coolaroo,//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Coolaroo_station_from_bridge.jpg/100px-Coolaroo_station_from_bridge.jpg,['bus'],Craigieburn,19.31,12.00,2,6 June 2010[63],Coolaroo,
+44,Craigieburn,//upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Craigieburn_Northbound_View.jpg/100px-Craigieburn_Northbound_View.jpg,['bus'],CraigieburnSeymour,26.10,16.22,2,18 April 1872,Craigieburn,Upgraded in 2007
+45,Cranbourne,//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cranbourne_Railway_Station.jpg/100px-Cranbourne_Railway_Station.jpg,['bus'],Cranbourne,45.12,28.04,2,1 October 1888,Cranbourne,Upgraded in 2008
+46,Crib Point,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Crib_Point_Station_%283%29.jpg/100px-Crib_Point_Station_%283%29.jpg,['bus'],Stony Point,72.83,45.25,2,17 December 1889,Crib Point,
+47,Croxton,//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Croxton_Railway_Station.jpg/100px-Croxton_Railway_Station.jpg,['tram'],Mernda,9.61,5.97,1,8 October 1889,Northcote,
+48,Croydon,//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/CroydonTrainStationMarch2009.jpg/100px-CroydonTrainStationMarch2009.jpg,['bus'],Lilydale,31.03,19.28,2,1 December 1882,Croydon,Formerly Warrandyte
+49,Dandenong,//upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Dandenong_Station.jpg/100px-Dandenong_Station.jpg,"['bus', 'coach_image']",CranbournePakenhamTraralgon,31.19,19.38,2,8 October 1877,Dandenong,Upgraded in 1995
+50,Darebin,//upload.wikimedia.org/wikipedia/commons/thumb/0/07/Darebin_Railway_Station.jpg/100px-Darebin_Railway_Station.jpg,['bus'],Hurstbridge,11.22,6.97,1,8 May 1922,Ivanhoe,
+51,Darling,//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Darling_Railway_Station.JPG/100px-Darling_Railway_Station.JPG,['bus'],Glen Waverley,12.68,7.88,"['1', '2\n']",24 March 1890,Malvern East,
+52,Dennis,//upload.wikimedia.org/wikipedia/commons/thumb/4/43/Dennis_Railway_Station.jpg/100px-Dennis_Railway_Station.jpg,['bus'],Hurstbridge,8.40,5.22,1,4 February 1924,Northcote,
+53,Diamond Creek,//upload.wikimedia.org/wikipedia/commons/thumb/5/50/Diamond_Creek_station.jpg/100px-Diamond_Creek_station.jpg,['bus'],32.63,20.28,2[76],25 June 1912,Diamond Creek[76],,
+54,Diggers Rest,//upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Diggers_Rest_Station.JPG/100px-Diggers_Rest_Station.JPG,['bus'],Sunbury,32.69,20.31,2,2 October 1859,Diggers Rest,
+55,Eaglemont,//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Eaglemont_Railway_Station.jpg/100px-Eaglemont_Railway_Station.jpg,[],Hurstbridge,13.09,8.13,"['1', '2\n']",1 May 1926,Eaglemont,
+56,East Camberwell,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/East_Camberwell_Railway_Station.jpg/100px-East_Camberwell_Railway_Station.jpg,[],BelgraveLilydale,11.08,6.88,1,14 May 1900,Camberwell,
+57,East Malvern,//upload.wikimedia.org/wikipedia/commons/thumb/c/c8/East_Malvern_railway_station_-_Melbourne.jpg/100px-East_Malvern_railway_station_-_Melbourne.jpg,['bus'],Glen Waverley,13.75,8.54,"['1', '2\n']",3 February 1929,Malvern East,Formerly Eastmalvern
+58,East Richmond,//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/East_Richmond_station_%281%29.jpg/100px-East_Richmond_station_%281%29.jpg,['tram'],AlameinBelgraveGlen WaverleyLilydale,4.37,2.72,1,24 September 1860,Cremorne,Formerly Church Street
+59,Edithvale,//upload.wikimedia.org/wikipedia/commons/thumb/9/97/Edithvalestation2021.jpg/100px-Edithvalestation2021.jpg,['bus'],Frankston,31.67,19.68,2,20 September 1919,Edithvale,Rebuilt in 2021
+60,Elsternwick,//upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Elsternwickstation2021.jpg/100px-Elsternwickstation2021.jpg,"['tram', 'bus']",Sandringham,10.95,6.80,1,19 December 1859,Elsternwick,
+61,Eltham,//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Eltham_Station.jpg/100px-Eltham_Station.jpg,['bus'],Hurstbridge,27.39,17.02,2,5 June 1902,Eltham,
+62,Epping,//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Epping_Railway_Station%2C_Melbourne.jpg/100px-Epping_Railway_Station%2C_Melbourne.jpg,['bus'],Mernda,22.82,14.18,2,23 December 1889,Epping,
+63,Essendon,//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Essendon_Station_platforms_2_and_3.jpg/100px-Essendon_Station_platforms_2_and_3.jpg,"['tram', 'bus']",CraigieburnSeymour,8.01,4.98,1,1 November 1860,Essendon,
+64,Fairfield,//upload.wikimedia.org/wikipedia/commons/thumb/a/af/Fairfield_Westbound_View.jpg/100px-Fairfield_Westbound_View.jpg,['bus'],Hurstbridge,9.15,5.69,1,8 May 1888,Fairfield,Formerly Fairfield Park
+65,Fawkner,//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Fawkner_railway_station%2C_Melbourne.jpg/100px-Fawkner_railway_station%2C_Melbourne.jpg,['bus'],Upfield,13.23,8.22,"['1', '2\n']",8 October 1889,Hadfield,"Formerly:
+Fawkner Cemetery
+Fawkner"
+66,Ferntree Gully,//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Ferntree_Gully2.jpg/100px-Ferntree_Gully2.jpg,['bus'],Belgrave,35.89,22.30,2,4 December 1889,Ferntree Gully,Formerly Lower Ferntree Gully. Also spelt Lower Fern Tree Gully / Fern Tree Gully
+67,Flagstaff,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flagstaff_Station_Platform_4_2017.jpg/100px-Flagstaff_Station_Platform_4_2017.jpg,['tram'],"show
+11 Services
+AlameinBelgraveCraigieburn
+CranbourneGlen Waverley
+HurstbridgeLilydaleMernda
+PakenhamSunburyUpfield",1.24,0.77,1,27 May 1985,Melbourne,
+68,Flemington Bridge,//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flemington_Bridge_Northbound_View.JPG/100px-Flemington_Bridge_Northbound_View.JPG,"['tram', 'bus']",Upfield,4.06,2.52,1,10 April 1885,North Melbourne,Formerly Flemington
+69,Flemington Racecourse,//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Train_at_Flemington_Racecourse_railway_station%2C_Melbourne.jpg/100px-Train_at_Flemington_Racecourse_railway_station%2C_Melbourne.jpg,[],Flemington Racecourse,6.59,4.09,1,28 February 1861,Flemington,
+70,Flinders Street,//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flinders_Street_Station_illuminated_at_night.jpg/100px-Flinders_Street_Station_illuminated_at_night.jpg,"['tram', 'bus']","show
+17 Services
+AlameinBelgraveCraigieburnCranbourneFlemington RacecourseFrankstonGlen WaverleyHurstbridgeLilydaleMerndaPakenhamSandringhamSunburyTraralgonUpfieldWerribeeWilliamstown",1.23,0.76,1,12 September 1854,Melbourne,Formerly Melbourne Terminus. Rebuilt in 1910
+71,Footscray,//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Footscray_station_signal_box_and_footbridge.jpg/100px-Footscray_station_signal_box_and_footbridge.jpg,"['tram', 'bus']","show
+10 Services
+AraratBallaratBendigoEchucaGeelongSunburySwan HillWarrnamboolWerribeeWilliamstown",5.62,3.49,1,24 January 1859,Footscray,"Formerly:
+Footscray (Suburban) / Middle Footscray
+Footscray (Main Line).
+Rebuilt 24 September 1900. Upgraded in 2014"
+72,Frankston,//upload.wikimedia.org/wikipedia/commons/thumb/d/db/Frankston_Station_03.jpg/100px-Frankston_Station_03.jpg,['bus'],FrankstonStony Point,43.92,27.29,2,1 August 1882,Frankston,Upgraded in 2018
+73,Gardenvale,//upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Gardenvale_Southbound_View.jpg/100px-Gardenvale_Southbound_View.jpg,['bus'],Sandringham,12.35,7.67,1,10 December 1906,Brighton,
+74,Gardiner,//upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Gardiner_railway_station_-_Melbourne.jpg/100px-Gardiner_railway_station_-_Melbourne.jpg,['tram'],Glen Waverley,10.61,6.59,1,24 March 1890,Glen Iris,Rebuilt in 2016
+75,Ginifer,//upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ginifer_Railway_Station_%281_Nov_2021%29.jpg/100px-Ginifer_Railway_Station_%281_Nov_2021%29.jpg,['bus'],Sunbury,15.97,9.92,2,31 October 1982,St Albans,Rebuilt in 2016
+76,Glen Huntly,//upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Glenhuntly_Northbound_View.jpg/100px-Glenhuntly_Northbound_View.jpg,['tram'],Frankston,13.46,8.36,1,19 December 1881,Glen Huntly,"Formerly:
+Glen Huntly
+Glen Huntly Road
+Glenhuntly
+Currently being rebuilt as part of the Level Crossing Removal Project"
+77,Glen Iris,//upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Glen_Iris_railway_station_-_close.jpg/100px-Glen_Iris_railway_station_-_close.jpg,"['tram', 'bus']",Glen Waverley,11.52,7.16,1,24 March 1890,Glen Iris,
+78,Glen Waverley,//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Xtrapolis_arrived_at_Glen_Waverley_Railway_Station.jpg/100px-Xtrapolis_arrived_at_Glen_Waverley_Railway_Station.jpg,['bus'],22.23,13.81,2[107],5 May 1930,Glen Waverley[107],,
+79,Glenbervie,//upload.wikimedia.org/wikipedia/commons/thumb/1/19/Glenbervie_station_platforms.jpg/100px-Glenbervie_station_platforms.jpg,[],Craigieburn,9.13,5.67,1,11 September 1922,Essendon,
+80,Glenferrie,//upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Glenferrie_Eastbound_View.JPG/100px-Glenferrie_Eastbound_View.JPG,['tram'],AlameinBelgraveLilydale,8.12,5.05,1,3 April 1882,Hawthorn,Formerly Glenferrie Road
+81,Glenroy,//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Glenroy_Northbound_View.jpg/100px-Glenroy_Northbound_View.jpg,['bus'],Craigieburn,14.40,8.95,"['1', '2\n']",24 January 1887,Glenroy,Rebuilt in 2022
+82,Gowrie,//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/GowrieStationBuilding.jpg/100px-GowrieStationBuilding.jpg,['bus'],Upfield,14.73,9.15,2,16 October 1928,Fawkner,
+83,Greensborough,//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/GreensboroughBuildingPlatform1.JPG/100px-GreensboroughBuildingPlatform1.JPG,['bus'],Hurstbridge,23.07,14.34,2,5 June 1902,Greensborough,
+84,Hallam,//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Hallam_Westbound_View.jpg/100px-Hallam_Westbound_View.jpg,['bus'],Pakenham,37.45,23.27,2,1 December 1880,Hallam,Formerly Hallam's Road. Rebuilt in 2022
+85,Hampton,//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Hampton_Railway_Station.jpg/100px-Hampton_Railway_Station.jpg,['bus'],Sandringham,17.70,11.00,2,2 September 1887,Hampton,"Formerly:
+Retreat
+Hampton"
+86,Hartwell,//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Hartwell_railway_station.jpg/100px-Hartwell_railway_station.jpg,[],Alamein,13.30,8.26,1,7 May 1906,Camberwell,Formerly Hartwell Hill
+87,Hastings,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Hastings_railway_station_building_-_December_2021.jpg/100px-Hastings_railway_station_building_-_December_2021.jpg,['bus'],Stony Point,64.99,40.38,2,10 September 1889,Hastings,
+88,Hawksburn,//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Hawksburn_railway_station_-_Melbourne.jpg/100px-Hawksburn_railway_station_-_Melbourne.jpg,[],Frankston,6.63,4.12,1,7 May 1889,South Yarra,
+89,Hawkstowe,//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hawkstowe_Station_%281%29.jpg/100px-Hawkstowe_Station_%281%29.jpg,['bus'],Mernda,30.73,19.09,2,26 August 2018[121],South Morang,
+90,Hawthorn,//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Hawthorn_railway_station_-_Melbourne.jpg/100px-Hawthorn_railway_station_-_Melbourne.jpg,['bus'],AlameinBelgraveLilydale,6.89,4.28,1,13 April 1861,Hawthorn,
+91,Heatherdale,//upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Eastbound_rebuilt_Heatherdale_station.JPG/100px-Eastbound_rebuilt_Heatherdale_station.JPG,['bus'],BelgraveLilydale,24.42,15.17,2,7 September 1958,Ringwood,Rebuilt in 2017
+92,Heathmont,//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Southbound_View_Heathmont.jpeg/100px-Southbound_View_Heathmont.jpeg,['bus'],Belgrave,28.12,17.47,2,1 May 1926,Heathmont,
+93,Heidelberg,//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Heidelberg_Station_View.jpg/100px-Heidelberg_Station_View.jpg,['bus'],Hurstbridge,14.04,8.72,"['1', '2\n']",8 May 1888,Heidelberg,
+94,Heyington,//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Heyington_railway_station_-_Melbourne.jpg/100px-Heyington_railway_station_-_Melbourne.jpg,[],Glen Waverley,7.12,4.42,1,24 March 1890,Toorak,
+95,Highett,//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Stationhighett2021.jpg/100px-Stationhighett2021.jpg,['bus'],Frankston,20.06,12.46,2,19 December 1881,Highett,Formerly Highett Road
+96,Holmesglen,//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Holmesglen_railway_station_-_Melbourne.jpg/100px-Holmesglen_railway_station_-_Melbourne.jpg,['bus'],Glen Waverley,15.64,9.72,"['1', '2\n']",5 May 1930,East Malvern,
+97,Hoppers Crossing,//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Hoppers_Crossing_stn_platform_night.jpg/100px-Hoppers_Crossing_stn_platform_night.jpg,['bus'],Werribee,27.67,17.19,2,16 November 1970,Hoppers Crossing,
+98,Hughesdale,//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Hughesdale_Railway_Station_Platform_2_-_a_-_April_2019.jpg/100px-Hughesdale_Railway_Station_Platform_2_-_a_-_April_2019.jpg,['bus'],CranbournePakenham,15.27,9.49,"['1', '2\n']",28 February 1925,Hughesdale,Rebuilt in 2018
+99,Huntingdale,//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Huntingdale_railway_station_-_Melbourne.jpg/100px-Huntingdale_railway_station_-_Melbourne.jpg,['bus'],18.28,11.36,1/2[132] y,25 June 1927,Oakleigh[132],Formerly Eastoakleigh,
+100,Hurstbridge,//upload.wikimedia.org/wikipedia/commons/thumb/4/49/Northbound_view_in_November_2015.JPG/100px-Northbound_view_in_November_2015.JPG,['bus'],Hurstbridge,38.02,23.62,2,25 June 1912,Hurstbridge,
+101,Ivanhoe,//upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ivanhoe_Railway_Station.jpg/100px-Ivanhoe_Railway_Station.jpg,['bus'],12.14,7.54,1/2,8 May 1888,Ivanhoe[134],,
+102,Jacana,//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Jacana_Railway_Station_December_2018.jpg/100px-Jacana_Railway_Station_December_2018.jpg,[],Craigieburn,15.43,9.59,2,15 February 1959,Glenroy,
+103,Jewell,//upload.wikimedia.org/wikipedia/commons/thumb/6/66/Jewell_Northbound_View.jpg/100px-Jewell_Northbound_View.jpg,"['tram', 'bus']",Upfield,6.50,4.04,1,9 September 1884,Brunswick,Formerly South Brunswick
+104,Jolimont,//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jolimont_railway_station_August_2016.jpg/100px-Jolimont_railway_station_August_2016.jpg,['tram'],HurstbridgeMernda,2.91,1.81,1,21 October 1901,East Melbourne,
+105,Jordanville,//upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Jordanville_Westbound_View.jpg/100px-Jordanville_Westbound_View.jpg,['bus'],Glen Waverley,17.64,10.96,2,5 May 1930,Mount Waverley,
+106,Kananook,//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Kananook_railway_station%2C_Melbourne%2C_2014.jpg/100px-Kananook_railway_station%2C_Melbourne%2C_2014.jpg,['bus'],Frankston,41.44,25.75,2,25 August 1975,Seaford,
+107,Keilor Plains,//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Keilor_Plains_station.jpg/100px-Keilor_Plains_station.jpg,['bus'],Sunbury,19.62,12.19,2,27 January 2002,St Albans,
+108,Kensington,//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Kensington_Southbound_View.JPG/100px-Kensington_Southbound_View.JPG,['bus'],Craigieburn,3.58,2.22,1,1 November 1860,Kensington,
+109,Keon Park,//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Keon_Park_Railway_Station.jpg/100px-Keon_Park_Railway_Station.jpg,['bus'],Mernda,17.54,10.90,2,16 December 1929,Thomastown,
+110,Kooyong,//upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kooyong_railway_station_-_Melbourne.jpg/100px-Kooyong_railway_station_-_Melbourne.jpg,['tram'],Glen Waverley,8.28,5.14,1,24 March 1890,Kooyong,
+111,Laburnum,//upload.wikimedia.org/wikipedia/commons/thumb/6/63/New_Laburnum_station.jpg/100px-New_Laburnum_station.jpg,['bus'],BelgraveLilydale,17.82,11.07,2,13 July 1958,Blackburn,
+112,Lalor,//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lalor_Northwest_Bound_View.jpg/100px-Lalor_Northwest_Bound_View.jpg,['bus'],Mernda,20.81,12.93,2,1 October 1949,Lalor,
+113,Laverton,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Laverton_Southbound_View.jpg/100px-Laverton_Southbound_View.jpg,['bus'],Werribee,21.01,13.06,"['1', '2\n']",1 July 1886,Laverton,
+114,Leawarra,//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Leawarra_railway_station%2C_Melbourne_2010.jpg/100px-Leawarra_railway_station%2C_Melbourne_2010.jpg,['bus'],Stony Point,45.77,28.44,2,30 November 1959,Frankston,Formerly Railmotor Stopping Place No. 16
+115,Lilydale,//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Lilydale_Southbound_View_Platform_1.jpeg/100px-Lilydale_Southbound_View_Platform_1.jpeg,"['bus', 'coach_image']",Lilydale,38.86,24.15,2,1 December 1882,Lilydale,Rebuilt in 2021
+116,Lynbrook,//upload.wikimedia.org/wikipedia/commons/thumb/5/59/Lynbrook_station.jpg/100px-Lynbrook_station.jpg,['bus'],Cranbourne,39.59,24.60,2,22 April 2012[46],Lynbrook,
+117,Macaulay,//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Macaulay_Southbound_View.jpg/100px-Macaulay_Southbound_View.jpg,['bus'],Upfield,3.25,2.02,1,1 December 1887,North Melbourne,
+118,Macleod,//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Macleod_Railway_Station.jpg/100px-Macleod_Railway_Station.jpg,['bus'],Hurstbridge,17.71,11.00,2,1 March 1911,Macleod,
+119,Malvern,//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Malvern_Railway_Station.jpg/100px-Malvern_Railway_Station.jpg,['tram'],CranbourneFrankstonPakenham,10.11,6.28,1,7 May 1879,Malvern,
+120,McKinnon,//upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mckinnon_Station_August_2016.jpg/100px-Mckinnon_Station_August_2016.jpg,['bus'],Frankston,15.84,9.84,"['1', '2\n']",1 September 1884,McKinnon,Formerly McKinnon Road. Rebuilt in 2016
+121,Melbourne Central,//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Melbourne_Central_Station_Platform_2017.jpg/100px-Melbourne_Central_Station_Platform_2017.jpg,"['tram', 'bus']","show
+11 Services
+AlameinBelgraveCraigieburnCranbourneGlen WaverleyHurstbridgeLilydaleMerndaPakenhamSunburyUpfield",1.85,1.15,1,26 January 1981,Melbourne,Formerly Museum
+122,Mentone,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/March_2021_Mentone_Station.jpg/100px-March_2021_Mentone_Station.jpg,['bus'],Frankston,24.48,15.21,2,19 December 1881,Mentone,"Formerly
+Balcombe
+Balcombe RoadRebuilt in 2020"
+123,Merinda Park,//upload.wikimedia.org/wikipedia/commons/thumb/3/35/MerindaParkStationEntranceP1.jpg/100px-MerindaParkStationEntranceP1.jpg,['bus'],Cranbourne,42.35,26.32,2,24 March 1995,Cranbourne North,Rebuilt in 2022
+124,Merlynston,//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/MerlynstonNov2006.jpg/100px-MerlynstonNov2006.jpg,['bus'],Upfield,12.49,7.76,"['1', '2\n']",8 October 1889,Coburg North,Formerly North Coburg
+125,Mernda,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mernda_Station_December_2021_1.jpg/100px-Mernda_Station_December_2021_1.jpg,['bus'],Mernda,33.07,20.55,2,23 December 1889,Mernda,Rebuilt 26 August 2018
+126,Merri,//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Merri_Northbound_View.jpg/100px-Merri_Northbound_View.jpg,"['tram', 'bus']",8.04,5.00,1[163],8 October 1889,Northcote[163],Formerly Northcote,
+127,Middle Brighton,//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/MiddleBrightonstation2021.jpg/100px-MiddleBrightonstation2021.jpg,['bus'],Sandringham,14.52,9.02,"['1', '2\n']",21 December 1861,Brighton,Formerly Church Street
+128,Middle Footscray,//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Middle-footscray-telephoto.jpg/100px-Middle-footscray-telephoto.jpg,['bus'],Sunbury,6.61,4.11,1,10 December 1906,Footscray,
+129,Middle Gorge,//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Middle_Gorge_Northbound_View.jpg/100px-Middle_Gorge_Northbound_View.jpg,['bus'],Mernda,28.34,17.61,2,26 August 2018[121],South Morang,
+130,Mitcham,//upload.wikimedia.org/wikipedia/commons/thumb/9/96/New_Mitcham_Station.jpg/100px-New_Mitcham_Station.jpg,['bus'],BelgraveLilydale,22.47,13.96,2,25 December 1882,Mitcham,Rebuilt in 2014
+131,Montmorency,//upload.wikimedia.org/wikipedia/commons/thumb/9/97/Montmorency_Railway_Station%2C_September_2014.JPG/100px-Montmorency_Railway_Station%2C_September_2014.JPG,[],Hurstbridge,24.69,15.34,2,5 September 1923,Montmorency,
+132,Moonee Ponds,//upload.wikimedia.org/wikipedia/commons/thumb/3/34/July15_Moonee_Ponds_Station.jpg/100px-July15_Moonee_Ponds_Station.jpg,['bus'],Craigieburn,6.89,4.28,1,1 November 1860,Moonee Ponds,
+133,Moorabbin,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Moorabbin_train_station_2021.jpg/100px-Moorabbin_train_station_2021.jpg,['bus'],Frankston,18.45,11.46,2,19 December 1881,Moorabbin,Formerly South Brighton
+134,Mooroolbark,//upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mooroolbark_Westbound_View.JPG/100px-Mooroolbark_Westbound_View.JPG,['bus'],Lilydale,34.48,21.42,2,10 October 1887,Mooroolbark,Rebuilt in 2021
+135,Mordialloc,//upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mordiallocstationvictoria2021.jpg/100px-Mordiallocstationvictoria2021.jpg,['bus'],Frankston,27.69,17.21,2,19 December 1881,Mordialloc,
+136,Moreland,//upload.wikimedia.org/wikipedia/commons/thumb/1/13/Moreland_Southbound_View.JPG/100px-Moreland_Southbound_View.JPG,"['tram', 'bus']",Upfield,8.78,5.46,1,9 September 1884,Coburg,
+137,Morradoo,//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Morradoo_railway_station%2C_Melbourne.jpg/100px-Morradoo_railway_station%2C_Melbourne.jpg,['bus'],Stony Point,70.96,44.09,2,7 November 1960,Crib Point,Formerly Railmotor Stopping Place No. 15
+138,Mount Waverley,//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Mount_Waverley_Westbound_View.jpg/100px-Mount_Waverley_Westbound_View.jpg,['bus'],Glen Waverley,19.00,11.81,2,5 May 1930,Mount Waverley,
+139,Murrumbeena,//upload.wikimedia.org/wikipedia/commons/thumb/1/10/New_Murrumbeena_railway_station_on_the_18-06-2018_%282%29.jpg/100px-New_Murrumbeena_railway_station_on_the_18-06-2018_%282%29.jpg,['bus'],CranbournePakenham,14.43,8.97,1,14 May 1879,Murrumbeena,Rebuilt in 2018
+140,Narre Warren,//upload.wikimedia.org/wikipedia/commons/thumb/1/13/Narre_Warren_station_May17.jpg/100px-Narre_Warren_station_May17.jpg,['bus'],Pakenham,40.80,25.35,2,10 March 1882,Narre Warren,Being rebuilt as part of the Level Crossing Removal Project
+141,Newmarket,//upload.wikimedia.org/wikipedia/commons/thumb/3/36/Newmarket_Northbound_View.JPG/100px-Newmarket_Northbound_View.JPG,['tram'],Craigieburn,4.30,2.67,1,1 November 1860,Flemington,
+142,Newport,//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Railway_Station_Newport.jpg/100px-Railway_Station_Newport.jpg,['bus'],WerribeeWilliamstown,10.56,6.56,1,1 March 1859,Newport,"Formerly:
+Williamstown Junction
+Geelong Junction"
+143,Noble Park,//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/New_Noble_Park_railway_station_February_2018.jpg/100px-New_Noble_Park_railway_station_February_2018.jpg,['bus'],CranbournePakenham,27.23,16.92,2,3 February 1913,Noble Park,Rebuilt in 2018
+144,North Brighton,//upload.wikimedia.org/wikipedia/commons/thumb/4/47/North_Brighton_Station_towards_Sandringham.JPG/100px-North_Brighton_Station_towards_Sandringham.JPG,['bus'],Sandringham,13.24,8.23,"['1', '2\n']",19 December 1859,Brighton,Formerly Bay Street
+145,North Melbourne,//upload.wikimedia.org/wikipedia/commons/thumb/2/2f/North_Melbourne_station_main_entry_2009.jpg/100px-North_Melbourne_station_main_entry_2009.jpg,['bus'],"show
+6 Services
+CraigieburnFlemington RacecourseSeymourSunburyUpfieldWerribeeWilliamstown",1.72,1.07,1,6 October 1859,West Melbourne,Upgraded in 2009
+146,North Richmond,//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/North_Richmond_Station..jpg/100px-North_Richmond_Station..jpg,"['tram', 'bus']",HurstbridgeMernda,4.16,2.58,1,21 October 1901,Richmond,
+147,North Williamstown,//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/North_Williamstown_Northbound_View.JPG/100px-North_Williamstown_Northbound_View.JPG,['bus'],Williamstown,12.27,7.62,1,1 February 1859,Williamstown,Rebuilt in 2021
+148,Northcote,//upload.wikimedia.org/wikipedia/commons/thumb/2/22/Northcote_Northbound_View.jpg/100px-Northcote_Northbound_View.jpg,"['tram', 'bus']",Mernda,8.97,5.57,1,8 October 1889,Northcote,Formerly Middle Northcote
+149,Nunawading,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Nunawading_Railway_Station..jpg/100px-Nunawading_Railway_Station..jpg,['bus'],BelgraveLilydale,20.77,12.91,2,4 June 1888,Nunawading,Formerly Tunstall. Rebuilt in 2010
+150,Oak Park,//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Oak_Park_Southbound_View.jpg/100px-Oak_Park_Southbound_View.jpg,[],Craigieburn,12.88,8.00,"['1', '2\n']",13 August 1956,Oak Park,
+151,Oakleigh,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Oakleigh_railway_station_-_Melbourne.jpg/100px-Oakleigh_railway_station_-_Melbourne.jpg,['bus'],CranbournePakenham,16.59,10.31,"['1', '2\n']",8 October 1877,Oakleigh,Upgraded in 2018–2019
+152,Officer,//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Officer_railway_station%2C_Melbourne.jpg/100px-Officer_railway_station%2C_Melbourne.jpg,[],Pakenham,51.45,31.97,2,4 August 1881,Officer,Formerly Officer's Siding
+153,Ormond,//upload.wikimedia.org/wikipedia/commons/thumb/5/53/New_Ormond_Railway_Station.jpg/100px-New_Ormond_Railway_Station.jpg,['bus'],Frankston,15.02,9.33,"['1', '2\n']",19 December 1881,Ormond,Formerly North Road. Rebuilt in 2016
+154,Pakenham,//upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pakenham_station_July18.JPG/100px-Pakenham_station_July18.JPG,['bus'],PakenhamTraralgon,58.19,36.16,2,8 October 1877,Pakenham,
+155,Parkdale,//upload.wikimedia.org/wikipedia/commons/thumb/8/82/Parkdale_station_2018.JPG/100px-Parkdale_station_2018.JPG,['bus'],Frankston,25.93,16.11,2,1 September 1919,Parkdale,Currently being rebuilt as part of the Level Crossing Removal Project
+156,Parliament,//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Parliament_Station_%28Victoria%2C_2020%29.jpg/100px-Parliament_Station_%28Victoria%2C_2020%29.jpg,['tram'],"show
+11 Services
+AlameinBelgraveCraigieburnCranbourneGlen WaverleyHurstbridgeLilydaleMerndaPakenhamSunburyUpfield",3.08,1.91,1,22 January 1983,East Melbourne,
+157,Pascoe Vale,//upload.wikimedia.org/wikipedia/commons/thumb/8/84/Pascoe_Vale_Northbound_View_Jan2015.JPG/100px-Pascoe_Vale_Northbound_View_Jan2015.JPG,['bus'],Craigieburn,11.27,7.00,"['1', '2\n']",10 November 1885,Pascoe Vale,
+158,Patterson,//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Patterson_Railway_station.jpg/100px-Patterson_Railway_station.jpg,[],Frankston,17.39,10.81,2,28 May 1961,Bentleigh,
+159,Prahran,//upload.wikimedia.org/wikipedia/commons/thumb/5/57/Comeng_running_a_down_Sandringham_service_at_Prahran_Station_%28cropped%29.jpg/100px-Comeng_running_a_down_Sandringham_service_at_Prahran_Station_%28cropped%29.jpg,['tram'],Sandringham,6.72,4.18,1,22 December 1860,Prahran,Formerly Greville Street
+160,Preston,//upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Preston_Station_Entrance.jpg/100px-Preston_Station_Entrance.jpg,['bus'],Mernda,12.47,7.75,"['1', '2\n']",8 October 1889,Preston,Formerly Preston – Murray Road. Rebuilt in 2022
+161,Regent,//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Regent_Railway_Station.jpg/100px-Regent_Railway_Station.jpg,['bus'],13.61,8.46,1/2[207],8 October 1889,Reservoir[207],Formerly Preston – Regent Street,
+162,Reservoir,//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Reservoir_Station_in_February_2020.jpg/100px-Reservoir_Station_in_February_2020.jpg,['bus'],14.94,9.28,1/2[208],8 October 1889,Reservoir[208],Formerly Preston – Reservoir. Rebuilt in 2019,
+163,Richmond,//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Richmond-station-platforms.jpg/100px-Richmond-station-platforms.jpg,"['tram', 'bus']","show
+9 Services
+AlameinBelgraveCranbourneFrankstonGlen WaverleyLilydalePakenhamSandringhamTraralgon",3.80,2.36,1,8 February 1859,Richmond,"Formerly:
+Swan Street
+Punt Road"
+164,Ringwood,//upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ringwood_Railway_Station_from_Platform_2_looking_north-east.jpg/100px-Ringwood_Railway_Station_from_Platform_2_looking_north-east.jpg,"['bus', 'coach_image']",BelgraveLilydale,25.76,16.01,2,1 December 1882,Ringwood,Upgraded in 2016
+165,Ringwood East,//upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Entrance_to_Ringwood_East.jpg/100px-Entrance_to_Ringwood_East.jpg,['bus'],Lilydale,27.76,17.25,2,18 May 1925,Ringwood East,
+166,Ripponlea,//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ripponleastation3.jpg/100px-Ripponleastation3.jpg,"['tram', 'bus']",Sandringham,9.83,6.11,1,1 May 1912,Ripponlea,
+167,Riversdale,//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Riversdaleplatform1.JPG/100px-Riversdaleplatform1.JPG,"['tram', 'bus']",Alamein,11.73,7.29,1,30 May 1890,Camberwell,
+168,Rosanna,//upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rosanna_Station_platforms_in_March_2020.jpg/100px-Rosanna_Station_platforms_in_March_2020.jpg,['bus'],Hurstbridge,15.78,9.81,2,1 October 1927,Rosanna,Rebuilt in 2018
+169,Roxburgh Park,//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Roxburgh_Park_Southbound_View.jpg/100px-Roxburgh_Park_Southbound_View.jpg,['bus'],Craigieburn,22.08,13.72,2,18 April 1872,Roxburgh Park,Formerly Somerton
+170,Royal Park,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Royal_Park_Station_Oct_2019_01.jpg/100px-Royal_Park_Station_Oct_2019_01.jpg,"['tram', 'bus']",Upfield,5.46,3.39,1,9 September 1884,Parkville,
+171,Rushall,//upload.wikimedia.org/wikipedia/commons/thumb/1/13/Rushall_Station_Northwest_View.jpg/100px-Rushall_Station_Northwest_View.jpg,['bus'],Mernda,7.32,4.55,1,1 January 1927,Fitzroy North,
+172,Ruthven,//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Ruthven_Railway_Station.jpg/100px-Ruthven_Railway_Station.jpg,['bus'],15.95,9.91,2[221],5 August 1963,Reservoir[221],,
+173,Sandown Park,//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Sandown_Park_Railway_Station.jpg/100px-Sandown_Park_Railway_Station.jpg,[],CranbournePakenham,25.68,15.96,2,c. December 1888,Springvale,Formerly Oakleigh Park Racecourse
+174,Sandringham,//upload.wikimedia.org/wikipedia/commons/thumb/8/80/Sandringhamstation2021.jpg/100px-Sandringhamstation2021.jpg,['bus'],Sandringham,19.16,11.91,2,2 September 1887,Sandringham,
+175,Seaford,//upload.wikimedia.org/wikipedia/commons/thumb/3/30/Seaford_railway_station%2C_Melbourne_2010.jpg/100px-Seaford_railway_station%2C_Melbourne_2010.jpg,['bus'],Frankston,39.35,24.45,,1 December 1913,Seaford,
+176,Seaholme,//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Seaholme_railway_station%2C_Melbourne.jpg/100px-Seaholme_railway_station%2C_Melbourne.jpg,['bus'],Werribee,16.13,10.02,1,26 January 1920,Seaholme,
+177,Seddon,//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Seddon_Northeast_View.jpg/100px-Seddon_Northeast_View.jpg,[],WerribeeWilliamstown,6.62,4.11,1,10 December 1906,Seddon,
+178,Showgrounds,//upload.wikimedia.org/wikipedia/commons/thumb/5/53/Showgrounds-railway-station-melbourne.jpg/100px-Showgrounds-railway-station-melbourne.jpg,['tram'],Flemington Racecourse,5.73,3.56,1,7 November 1883,Flemington,
+179,Somerville,//upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Somerville_Station_%282%29.jpg/100px-Somerville_Station_%282%29.jpg,['bus'],Stony Point,55.82,34.68,2,10 September 1889,Somerville,
+180,South Kensington,//upload.wikimedia.org/wikipedia/commons/thumb/2/2b/South_Kensington_railway_station%2C_Melbourne.jpg/100px-South_Kensington_railway_station%2C_Melbourne.jpg,[],WerribeeWilliamstown,3.49,2.17,1,11 March 1891,Kensington,
+181,South Morang,//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/South_Morang_railway_station_main_entrance.jpg/100px-South_Morang_railway_station_main_entrance.jpg,['bus'],Mernda,25.97,16.14,2,22 April 2012,South Morang,
+182,South Yarra,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/South_Yarra_platforms.jpg/100px-South_Yarra_platforms.jpg,['tram'],CranbourneFrankstonPakenhamSandringham,5.41,3.36,1,22 December 1860,South Yarra,Formerly Gardiner's Creek Road
+183,Southern Cross,//upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Southern_Cross_Suburban.JPG/100px-Southern_Cross_Suburban.JPG,"['tram', 'bus', 'skybus', 'coach_image']","show
+29 Services
+AlameinAlburyAraratBallaratBelgraveBendigoCraigieburnCranbourneEchucaFlemington RacecourseFrankstonGeelongGlen WaverleyHurstbridgeLilydaleMaryboroughMernda NSW TrainLink Southern PakenhamSeymourSheppartonSunburySwan HillTraralgonThe OverlandUpfieldWarrnamboolWerribeeWilliamstown",0,1[231],17 January 1859,Docklands[231],"Formerly:
+Spencer Street
+Batman's Hill",
+184,Southland,//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Southland_Railway_Station.jpg/100px-Southland_Railway_Station.jpg,[],Frankston,21.44,13.32,2,26 November 2017[233],Cheltenham,
+185,Spotswood,//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Spotswood_Southbound_View.jpg/100px-Spotswood_Southbound_View.jpg,[],WerribeeWilliamstown,9.22,5.73,1,1 February 1878,Spotswood,"Formerly:
+Spottiswoode
+Bayswater
+Edom"
+186,Springvale,//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Springvale_railway_station_-_Melbourne.jpg/100px-Springvale_railway_station_-_Melbourne.jpg,['bus'],CranbournePakenham,24.50,15.22,2,1 September 1880,Springvale,Formerly Spring Vale. Rebuilt in 2014
+187,St Albans,//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/St_Albans_Railway_Station.jpg/100px-St_Albans_Railway_Station.jpg,['bus'],Sunbury,17.81,11.07,2,1 February 1887,St Albans,Rebuilt 22 November 1959. Rebuilt in 2016
+188,Stony Point,//upload.wikimedia.org/wikipedia/commons/thumb/a/a8/The_nick_green_sprinter%2C7006_waits_to_depart_October_2013.jpg/100px-The_nick_green_sprinter%2C7006_waits_to_depart_October_2013.jpg,[],Stony Point,74.59,46.35,2,17 December 1889,Crib Point,
+189,Strathmore,//upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Strathmore_Northbound_View.jpg/100px-Strathmore_Northbound_View.jpg,['bus'],Craigieburn,9.79,6.08,1,28 October 1890,Essendon,Formerly North Essendon
+190,Sunbury,//upload.wikimedia.org/wikipedia/commons/thumb/8/88/Sunbury_Station.JPG/100px-Sunbury_Station.JPG,['bus'],BendigoEchucaSunbury,38.28,23.79,2,10 February 1859,Sunbury,
+191,Sunshine,//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sunshine_Station_platforms_1_%26_2.jpg/100px-Sunshine_Station_platforms_1_%26_2.jpg,['bus'],BallaratGeelongSunbury,12.25,7.61,"['1', '2\n']",7 September 1885,Sunshine,Formerly Braybrook Junction. Upgraded in 2014
+192,Syndal,//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Syndal_railway_station_upgrade%2C_Melbourne.JPG/100px-Syndal_railway_station_upgrade%2C_Melbourne.JPG,['bus'],Glen Waverley,20.89,12.98,2,5 May 1930,Glen Waverley,
+193,Tecoma,//upload.wikimedia.org/wikipedia/commons/thumb/3/31/TecomaStation2.jpg/100px-TecomaStation2.jpg,['bus'],Belgrave,41.34,25.69,2,1 February 1924,Tecoma,Originally narrow gauge
+194,Thomastown,//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Thomastown_Station_Aug_22.JPG/100px-Thomastown_Station_Aug_22.JPG,['bus'],Mernda,19.14,11.89,2,23 December 1889,Thomastown,Upgraded in 2011
+195,Thornbury,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Thornbury_Southbound_View.jpg/100px-Thornbury_Southbound_View.jpg,['tram'],10.62,6.60,1[248],8 October 1889,Thornbury[248],,
+196,Toorak,//upload.wikimedia.org/wikipedia/commons/thumb/8/85/Toorak_Railway_Station.jpg/100px-Toorak_Railway_Station.jpg,"['tram', 'bus']",Frankston,7.91,4.92,1,7 May 1879,Armadale,
+197,Tooronga,//upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tooronga_railway_station_-_Melbourne.jpg/100px-Tooronga_railway_station_-_Melbourne.jpg,['bus'],Glen Waverley,9.59,5.96,1,24 March 1890,Malvern,
+198,Tottenham,//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Siemens_train_citybound_at_Tottenham_railway_station.jpg/100px-Siemens_train_citybound_at_Tottenham_railway_station.jpg,[],Sunbury,9.10,5.65,1,2 March 1891,West Footscray,
+199,Tyabb,//upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Tyabb_Station_%283%29.jpg/100px-Tyabb_Station_%283%29.jpg,['bus'],Stony Point,59.84,37.18,2,10 September 1889,Tyabb,
+200,Union,//upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Union_Station_concourse.jpg/100px-Union_Station_concourse.jpg,['bus'],BelgraveLilydale,14.14,8.79,"['1', '2\n']",22 May 2023[254],Mont Albert,"Merge between:
+Surrey Hills
+Mont Albert"
+201,Upfield,//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Upfield_Station_%283%29.jpg/100px-Upfield_Station_%283%29.jpg,['bus'],Upfield,18.86,11.72,2,8 October 1889,Coolaroo,Formerly North Campbellfield
+202,Upper Ferntree Gully,//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Island_platform_at_Upper_Ferntree_Gully_Station%2C_Melbourne.jpg/100px-Island_platform_at_Upper_Ferntree_Gully_Station%2C_Melbourne.jpg,['bus'],Belgrave,37.66,23.40,2,4 December 1889,Upper Ferntree Gully,Also spelt Upper Fern Tree Gully
+203,Upwey,//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Upwey1.jpg/100px-Upwey1.jpg,['bus'],40.18,24.97,2[257],3 June 1901,Upwey[257],Originally narrow gauge,
+204,Victoria Park,//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Victoria_Park_Railway_Station.jpg/100px-Victoria_Park_Railway_Station.jpg,['bus'],HurstbridgeMernda,5.42,3.37,1,8 May 1888,Abbotsford,Formerly Collingwood
+205,Watergardens,//upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Watergardens_station_platforms.jpg/100px-Watergardens_station_platforms.jpg,['bus'],BendigoEchucaSunburySwan Hill,23.28,14.47,2,1 March 1859,Sydenham,"Formerly:
+Sydenham
+Keilor Road.
+Upgraded in 2002"
+206,Watsonia,//upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Watsonia_Railway_Station.jpg/100px-Watsonia_Railway_Station.jpg,['bus'],Hurstbridge,19.92,12.38,2,23 June 1924,Greensborough,
+207,Wattle Glen,//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wattle_Glen_station.jpg/100px-Wattle_Glen_station.jpg,['bus'],35.06,21.79,2[262],25 June 1912,Wattle Glen[262],Formerly Balee. Also spelt Wattleglen,
+208,Werribee,//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Platform_3_at_Werribee.jpg/100px-Platform_3_at_Werribee.jpg,['bus'],Werribee,31.70,19.70,2,25 June 1857,Werribee,
+209,West Footscray,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/WeFo_Station_Aug_2021.jpg/100px-WeFo_Station_Aug_2021.jpg,['bus'],Sunbury,7.33,4.55,1,1 October 1888,West Footscray,Formerly Footscray West. Upgraded in 2020
+210,West Richmond,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/West_Richmond_Railway_Station_2018-06-26.jpg/100px-West_Richmond_Railway_Station_2018-06-26.jpg,['bus'],HurstbridgeMernda,3.66,2.27,1,21 October 1901,Richmond,
+211,Westall,//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Westall_railway_station_-_Melbourne.jpg/100px-Westall_railway_station_-_Melbourne.jpg,['bus'],CranbournePakenham,22.64,14.07,2,6 February 1951,Clayton South,
+212,Westgarth,//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Westgraph_Railway_Station.jpg/100px-Westgraph_Railway_Station.jpg,"['tram', 'bus']",Hurstbridge,7.55,4.69,1,8 May 1888,Northcote,"Formerly:
+Northcote South
+Westgarth Street"
+213,Westona,//upload.wikimedia.org/wikipedia/commons/thumb/7/7b/EntranceWestona.jpg/100px-EntranceWestona.jpg,['bus'],Werribee,18.53,11.51,"['1', '2\n']",21 January 1985,Altona,
+214,Williams Landing,//upload.wikimedia.org/wikipedia/commons/thumb/4/45/%E5%A8%81%E8%93%9D%E7%94%BA%E7%AB%99.jpg/100px-%E5%A8%81%E8%93%9D%E7%94%BA%E7%AB%99.jpg,['bus'],23.48,14.59,2[270],28 April 2013,Williams Landing[270],,
+215,Williamstown,//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Williamstown_Railway_Station_June_2014.jpg/100px-Williamstown_Railway_Station_June_2014.jpg,['bus'],Williamstown,14.20,8.82,1,17 January 1859,Williamstown,
+216,Williamstown Beach,//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Williamstown_Beach_Station_%287%29.jpg/100px-Williamstown_Beach_Station_%287%29.jpg,[],13.18,8.19,1[273],12 August 1889,Williamstown[273],Formerly Beach,
+217,Willison,//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Willison_Station%2C_Camberwell.jpg/100px-Willison_Station%2C_Camberwell.jpg,[],Alamein,12.15,7.55,1,8 June 1908,Camberwell,Formerly Golf Links
+218,Windsor,//upload.wikimedia.org/wikipedia/commons/thumb/3/32/D003881-R1-05-20A.jpg/100px-D003881-R1-05-20A.jpg,['tram'],Sandringham,7.49,4.65,1,19 December 1859,Windsor,Formerly Chapel Street
+219,Yarraman,//upload.wikimedia.org/wikipedia/commons/thumb/5/51/Yarraman_railway_station_-_Melbourne.jpg/100px-Yarraman_railway_station_-_Melbourne.jpg,['bus'],CranbournePakenham,29.04,18.04,2,21 December 1976,Noble Park,
+220,Yarraville,//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Yarraville_railway_station%2C_Melbourne.jpg/100px-Yarraville_railway_station%2C_Melbourne.jpg,['bus'],WerribeeWilliamstown,7.54,4.69,1,20 November 1871,Yarraville,
