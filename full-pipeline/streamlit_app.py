@@ -26,17 +26,19 @@ for msg in st.session_state.messages:
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
-    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages, functions=features.DETAILS)
+    response = openai.ChatCompletion.create(model="gpt-4", messages=st.session_state.messages, functions=features.DETAILS)
     st.text(response['choices'][0])
-    finish_reason, i, message = response['choices'][0]
+    finish_reason = response['choices'][0]["finish_reason"]
+    message = response['choices'][0]["message"]
 
     # model wants to utilise a custom feature
     if (finish_reason == "function_call"):
-        feature_responses = [response]
+        feature_responses = st.session_state.messages
 
         for _i in range(NUM_ITERS):
-            response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=feature_responses, functions=features.DETAILS)
-            finish_reason, i, msg = response['choices'][0]
+            response = openai.ChatCompletion.create(model="gpt-4", messages=feature_responses, functions=features.DETAILS)
+            finish_reason = response['choices'][0]["finish_reason"]
+            message = response['choices'][0]["message"]
 
             match finish_reason:
                 case 'function_call':
@@ -49,10 +51,14 @@ if prompt := st.chat_input():
                     feature_responses.append(msg)
                     break
     
-        # feature-enriched answer is what the user wants
-        message = feature_responses[-1]
+    # feature-enriched answer is what the user wants
+    st.text(feature_responses)
+    st.text('===============')
+    st.text(feature_responses[-1])
+    message = feature_responses[-1]
 
-    text = json.dumps(message)['content']
+    st.text(message)
+    #text = json.loads(message)['content']
     
     st.session_state.messages.append({"role": "assistant", "content": text})
     st.chat_message("assistant").write(text)
