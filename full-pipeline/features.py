@@ -9,10 +9,10 @@ DETAILS = [
             "type": "object",
             "properties": {
                 "latitude": {
-                    "type": "decimal",
+                    "type": "float",
                 },
                 "longitude": {
-                    "type": "decimal",
+                    "type": "float",
                 }
             },
             "required": ["latitude", "longitude"]

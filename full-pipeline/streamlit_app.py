@@ -42,6 +42,7 @@ if prompt := st.chat_input():
                 case 'function_call':
                     feature = features.OPTIONS.get(msg['function_call'])
                     arguments = list(json.loads(feature['arguments']).values())
+                    print(arguments)
                     feature_response = feature(*arguments)
                     feature_responses.append({"role": "function", "name": feature['name'], "content": f"Result = {str(feature_response)}"})
                 case 'stop':
