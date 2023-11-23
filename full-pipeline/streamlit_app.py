@@ -1,7 +1,7 @@
-import streamlit as st
+import streamlit as st, os, openai, features, json
 from dotenv import load_dotenv
-import os
-import openai
+
+NUM_ITERS = 5
 
 # Load the .env file
 load_dotenv()
@@ -13,24 +13,45 @@ with st.sidebar:
 
 st.title("🗺️ Dora Transport")
 st.caption("Get from A to B")
+st.text('HGEh')
+
+
 
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "assistant", "content": "How can I help you?"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
-    #st.chat_message(msg["role"]).write(msg["content"])
+for msg in st.session_state.messages:
+    st.chat_message(msg["role"]).write(msg["content"])
 
-if prompt := st.chat_input("What is up"):
+if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
-    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages)
-    msg = response.choices[0]["message"]["content"]
-    st.text(msg)
+    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages, functions=features.DETAILS)
+
+    finish_reason, message = response['choices']['0']
+
+    # model wants to utilise a custom feature
+    if (finish_reason == "function_call"):
+        feature_responses = [response]
+
+        for _i in range(NUM_ITERS):
+            response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=feature_responses, functions=features.DETAILS)
+            finish_reason, msg = response['choices']['0']
+
+            match finish_reason:
+                case 'function_call':
+                    feature = features.OPTIONS.get(msg['function_call'])
+                    arguments = list(json.loads(feature['arguments']).values())
+                    feature_response = feature(*arguments)
+                    feature_responses.append({"role": "function", "name": feature['name'], "content": f"Result = {str(feature_response)}"})
+                case 'stop':
+                    feature_responses.append(msg)
+                    break
     
-    with st.chat_message("assistant"):
-        st.markdown(msg)
-    st.session_state.messages.append({"role": "assistant", "content": msg})
+        # feature-enriched answer is what the user wants
+        message = feature_responses[-1]
 
-
+    text = message['content']
+    
+    st.session_state.messages.append({"role": "assistant", "content": text})
+    st.chat_message("assistant").write(text)
