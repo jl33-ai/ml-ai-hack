@@ -5,6 +5,13 @@ from sklearn.metrics import mean_squared_error
 import datetime 
 from datetime import date
 
+"""
+NOTE: THIS IS STRICTLY A PREDICTIVE TOOL
+WE DO NOT CONDONE FARE EVADING 
+PART OF A LARGE SUITE OF JOURNEY PREDICTIONS, FOR THOSE WHO MAY FIND IT ANXIOUS
+
+"""
+
 reversed_train_lines = {
     'alamein': 1,
     'belgrave': 2,
@@ -27,7 +34,7 @@ reversed_train_lines = {
 train_lines = {number : line for line, number in reversed_train_lines.items()}
 
 # LOAD DATA HERE. 
-data = pd.read_csv('ao_sightings.csv')
+data = pd.read_csv('/Users/justinlee/Documents/projport/ml-ai-hack/ao_sightings.csv')
 
 X = data.drop('numSightings', axis=1)
 y = data['numSightings']
@@ -64,6 +71,8 @@ for i in range(1, 17):  # Line numbers
 daily_predictions = pd.DataFrame(data, columns =['lineNumber', 'dayOfWeek', 'weekOfYear', 'isWeekend', 'isSpecialDate'])
 
 print(f"Mean Squared Error: {mse}")
+
+
 
 for i in range(1, 17):
     print(f"Today, the predicted number of sightings on the {train_lines[i]} line is: ", round(gbr.predict(daily_predictions)[i-1], 1))
