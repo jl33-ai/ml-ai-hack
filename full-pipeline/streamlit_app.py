@@ -53,7 +53,6 @@ if prompt := st.chat_input():
             # features not needed to answer query/all relevant features utilised
             case 'stop':
                 # feature-enriched answer is what the user wants
-                text = feature_responses[-1]['content']
-                st.session_state.messages.append({"role": "assistant", "content": text})
-                st.chat_message("assistant").write(text)
+                st.session_state.messages.append({"role": "assistant", "content": message['content']})
+                st.chat_message("assistant").write(message['content'])
                 break
