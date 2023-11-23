@@ -26,33 +26,34 @@ for msg in st.session_state.messages:
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
-    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages, functions=features.DETAILS)
-    st.text(response['choices'][0])
-    finish_reason, i, message = response['choices'][0]
 
-    # model wants to utilise a custom feature
-    if (finish_reason == "function_call"):
-        feature_responses = [response]
+    feature_responses = st.session_state.messages
 
-        for _i in range(NUM_ITERS):
-            response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=feature_responses, functions=features.DETAILS)
-            finish_reason, i, msg = response['choices'][0]
+    # check if model wants to utilise a custom feature
+    for _i in range(NUM_ITERS):
+        # api output
+        response = openai.ChatCompletion.create(model="gpt-4", messages=feature_responses, functions=features.DETAILS)['choices'][0]
+        message = response['message']
+        finish_reason = response['finish_reason']
 
-            match finish_reason:
-                case 'function_call':
-                    feature = features.OPTIONS.get(msg['function_call'])
-                    arguments = list(json.loads(feature['arguments']).values())
-                    print(arguments)
-                    feature_response = feature(*arguments)
-                    feature_responses.append({"role": "function", "name": feature['name'], "content": f"Result = {str(feature_response)}"})
-                case 'stop':
-                    feature_responses.append(msg)
-                    break
-    
-        # feature-enriched answer is what the user wants
-        message = feature_responses[-1]
+        match finish_reason:
+            case 'function_call':
+                # model requests feature in form of json
+                desired_feature = message['function_call']
+                # get the signature of the feature from constant array
+                feature_function = features.OPTIONS.get(desired_feature['name'])
+                # arguments are located in the response json
+                args = list(json.loads(desired_feature['arguments']).values())
+                # perform: response = feature(arg1, arg2, arg3)
+                feature_response = feature_function(*args)
 
-    text = json.dumps(message)['content']
-    
+                # new message generated from feature output
+                feature_responses.append({"role": "function", "name": desired_feature['name'], "content": "Result = " + str(feature_response)})
+            case 'stop':
+                feature_responses.append(message)
+                break
+
+    # feature-enriched answer is what the user wants
+    text = feature_responses[-1]['content']
     st.session_state.messages.append({"role": "assistant", "content": text})
     st.chat_message("assistant").write(text)
