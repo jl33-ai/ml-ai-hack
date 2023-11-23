@@ -36,7 +36,7 @@ if prompt := st.chat_input():
 
         for _i in range(NUM_ITERS):
             response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=feature_responses, functions=features.DETAILS)
-            finish_reason, i, msg = response['choices'][0]
+            finish_reason, i, msg = json.dumps(response['choices'][0])
 
             match finish_reason:
                 case 'function_call':
