@@ -7,9 +7,17 @@ https://github.com/Lewington-pitsos/ouchcover
 
 - [ ] Streamlit Website
     - [ ] functional chatbot 
-    - [ ] Fine tuned 
+        - [ ] Fine tuned 
+## Functions 
+        - [ ] Disruptions API
+        - [ ] Whats on Melb
+        - [ ] OpenWeather
+        - [ ] Specific route plan 
+        - [ ] Annoyance Score
 
-    - [ ] Functions 
+
+    - [ ] Loading animation
+    - [ ] Explore extra widgets
 
 
 - [ ] Video
