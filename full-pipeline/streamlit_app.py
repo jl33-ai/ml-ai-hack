@@ -5,6 +5,7 @@ NUM_ITERS = 3
 
 # Load the .env file
 load_dotenv()
+
 with st.sidebar:
     # ADD THIS TO BOTTOM LEFT 
     openai.api_key =  os.getenv('MY_VARIABLE')
@@ -21,7 +22,6 @@ with st.sidebar:
 
 st.title("Dora Transport")
 st.caption("🗺️🎒🚂 Let me guide you from A to B")
-
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
