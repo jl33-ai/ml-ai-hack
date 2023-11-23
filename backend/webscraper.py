@@ -171,49 +171,6 @@ def get_weather(api_key, city="Melbourne", country="AU", forcast=False, current_
         else:
             print("Error fetching forcast data")
 
-# Site to scrape the train station data, only need to run once
-def train_station_data():
-    station_url = "https://en.wikipedia.org/wiki/List_of_Metro_Trains_Melbourne_railway_stations"
-    soup = soup_maker(station_url)
-    # webscraping doesn't seem to work, trying to pen the site
-    driver.get(station_url)
-    time.sleep(1)
-    html_content = driver.page_source
-    raw_html = Bs(html_content, 'html.parser')
-
-    # print(raw_html)
-    table_data = raw_html.find("table", class_="wikitable sortable mw-collapsible sticky-header jquery-tablesorter mw-made-collapsible")
-    # table_data = soup.findAll("table")
-    rows = table_data.find_all("tr")
-    print(table_data.find("tbody"))
-    # rows[0] is the header column, typically ignore, just need the titles
-
-    # Headers for data
-    """
-    Name
-
-    Image
-
-    Transport
-    connections
-
-
-    Service(s)
-
-    Distance from Southern Cross[4]
-
-    Zone(s)
-
-    Date opened[5]
-
-    Suburb
-
-    Notes
-    [5]
-    """
-
-    # if rows:
-    #     print(rows)
             
 
 # Replace 'your_api_key' with your actual OpenWeatherMap API key
