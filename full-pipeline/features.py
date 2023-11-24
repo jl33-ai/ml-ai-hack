@@ -34,7 +34,7 @@ DETAILS = [
         "name": "getMelbourneEvents",
         "description": '''returns a json containing the latest events in melbourne, the syntax for each event json is: 
                           name of event: {'summary': brief information about the event, 
-                                          'event_date': relative date of event (current year), 
+                                          'event_date': relative date of event (the year is always 2023), 
                                           'event_type': type of event}''',
         "parameters": {
             "type": "object",
