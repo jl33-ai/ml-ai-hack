@@ -8,12 +8,12 @@ Scrape ptv websites
 Add weather data
 """
 
-
-import time
-import requests
-from bs4 import BeautifulSoup as Bs
-import re
-import pandas as pd
+# remove these for now to ensure no errors in deployment
+#import time
+#import requests
+#from bs4 import BeautifulSoup as Bs
+#import re
+#import pandas as pd
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
