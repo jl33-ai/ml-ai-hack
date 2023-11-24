@@ -95,9 +95,9 @@ DETAILS = [
 
 # return lat, long pair
 def getStartingLocation():
-    response = json.loads(requests.get("https://ipapi.co/json/"))
+    response = requests.get("https://ipapi.co/json/").json
     
-    return response['latitude'], response['longitude']
+    return response.latitude, response.longitude
 
 def getCurrentWeather():
     latitude, longitude = getStartingLocation()
