@@ -14,6 +14,7 @@ first_run = True
 def convert_chat_to_json(chat_history):
     return json.dumps(chat_history, indent=2)
 
+'''
 # In the sidebar or wherever you want the button
 with st.sidebar:
     chat_history_json = convert_chat_to_json(st.session_state.messages)
@@ -26,6 +27,7 @@ with st.sidebar:
         file_name="chat_history.json",
         mime="application/json"
     )
+'''
 
     # ADD THIS TO BOTTOM LEFT
     "# Made by:"
