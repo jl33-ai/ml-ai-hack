@@ -1,4 +1,5 @@
-import requests
+from full-pipeline.webscraper import ptv_disruptions
+import requests, webscraper
 
 # how model uses APIs
 DETAILS = [
@@ -30,14 +31,26 @@ DETAILS = [
             "properties": {}
         }
     }, 
-    # {
-    #     "name": "getServiceInfo",
-    #     "description": "Get specific information about the PTV system",
-    #     "parameters": {
-    #         "type": "object",
-    #         "properties": {}
-    #     }
-    # }
+    {
+        "name": "getCurrEvents",
+        "description": '''returns an array of json files like: 
+                          {'title': name of the event, 
+                           'summary': brief information about the event, 
+                           'event_date': relative date of event (current year), 
+                           'event_type': type of event}''',
+        "parameters": {
+            "type": "object",
+            "properties": {}
+        }
+    },
+    {
+        "name": "getDistruptions",
+        "description": "returns a list of distruptions in the ptv network currently",
+        "parameters": {
+            "type": "object",
+            "properties": {}
+        }
+    }
 ]
 
 # return lat, long pair
@@ -48,6 +61,16 @@ def getStartingLocation():
 def getCurrentWeather():
     latitude, longitude = getStartingLocation()
     return requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={float(latitude)}&longitude={float(longitude)}&current=apparent_temperature&hourly=apparent_temperature&hourly=precipitation_probabiliy&daily=uv_index_max").json()
+
+def getCurrEvents():
+    # hard coded, in prod we should request these deets at the start of the day
+    return '''{'https://whatson.melbourne.vic.gov.au//things-to-do/christmas-treasure-hunt': {'title': 'Christmas Treasure Hunt', 'summary': 'Go on a Christmas adventure in Carlton Gardens.', 'event_date': '10 Dec', 'event_type': '\nFree\nFamily and kids\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/new-years-eve-twilight-dinner-package': {'title': "New Year's Eve Twilight Dinner Package", 'summary': "Enjoy a dining and drinks package in Melbourne's 160-year-old historic cellar.", 'event_date': '31 Dec', 'event_type': '\nEvents\nFood and wine\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/docklands-christmas-maze': {'title': 'Docklands Christmas Maze', 'summary': 'Find your holiday cheer at the giant Christmas maze, with amazing prizes to be won.', 'event_date': '29 Nov', 'event_type': '\nFree\nFamily and kids\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/titanic-the-artefact-exhibition': {'title': 'Titanic: The Artefact Exhibition', 'summary': 'Explore human stories of the Titanic told through 200+ artefacts recovered from the legendary ship.', 'event_date': '16 Dec', 'event_type': '\nExhibition\nHistory\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/eric-prydz-holo': {'title': 'Eric Prydz: Holo', 'summary': 'Swedish producer Prydz brings his jaw-dropping Holo live show to Melbourne.', 'event_date': '8', 'event_type': '\nMusic\nEntertainment\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/ngv-architecture-commission-this-is-air': {'title': 'NGV Architecture Commission: (This is) Air', 'summary': 'The NGV 2023 Architecture Commission is a large-scale installation that makes the invisible visible.', 'event_date': '23 Nov', 'event_type': '\nFree\nArt\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/christmas-square': {'title': 'Christmas Square', 'summary': 'Discover a Christmas wonderland featuring the city’s giant tree.', 'event_date': '24 Nov', 'event_type': '\nFree\nFamily and kids\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/cirque-du-soleil-luzia': {'title': 'Cirque du Soleil: Luzia', 'summary': 'Go on a vibrant journey through worlds filled with wonders and artistry with Cirque du Soleil.', 'event_date': '24 Mar', 'event_type': '\nTheatre\nDance\n'}}'''
+    # return webscraper.melb_events()
+
+def getDistruptions():
+    # default is train trips
+    return '''['Hurstbridge Line: Buses replacing trains on Friday 24 November 2023', 'Mernda Line: Buses replacing trains on Friday 24 November 2023', 'Parkdale Station: Station closure from 11.30pm Saturday 21 October 2023 to mid-2024', 'One escalator on Platform 6/7 at Flinders Street Station will be closed from 11pm Sunday 12 November to 12pm Wednesday 29 November 2023, due to station works. To access Platform 6/7, please use the adjacent stairs or lift located opposite Platform 2/3. For your safety, please observe any signage and instructions in place during this time.', 'Sunbury Line: Buses replace trains from 11.30pm Thursday 23 November to last service Sunday 26 November 2023', 'Cranbourne and Pakenham lines: Buses replacing trains from first service Friday 24 November to last service Sunday 26 November 2023', 'Pakenham Line: Buses replace trains between Dandenong and Pakenham from 9.30pm Friday 24 November to 9.30pm Sunday 26 November 2023', 'Belgrave and Lilydale lines: Buses replace trains on select sections from late January 2024', 'Frankston Line stations: Temporary car park closures, platform closures, and changes to pedestrian access until mid-2024', 'Cranbourne and Pakenham line stations: Temporary car park closures and changes to pedestrian access until 2024', 'Hurstbridge Line stations: Temporary car park closures and pedestrian access changes from January 2021 until further notice', 'Belgrave Station: Temporary car park closures from 4am Wednesday 23 March 2022 to Sunday 31 December 2023', 'Flinders Street Station: Temporary pedestrian access changes from Saturday 30 April 2022 to 2024', 'Albion and Sunshine stations: Temporary car park closures at select times from January 15 2023 to early February 2025', 'Croydon Station: Temporary car park closures and bus interchange relocation from Tuesday 28 March to 2025', 'Ringwood East Station: Temporary car park closure and pedestrian access changes from Monday 29 May 2023 until 2025', 'Keon Park Station: Temporary car park closures from Monday 5 June 2023 to 2025', 'Sunbury Station: Temporary car park closures from 20 June 2023 until late 2024', 'Bayswater Station: Temporary car park closures from Monday 10 July 2023 to Sunday 31 March 2024', 'Craigieburn Station: Temporary car space closures from mid-August 2023 until further notice', 'Parliament Station: Temporary pedestrian access changes from June 2022 to late 2023', 'Merinda Park Station: Temporary car park closures from late-September 2023 to mid-January 2024', 'Ringwood East Station: Permanent pedestrian access changes from Wednesday 18 October 2023', 'Bayswater Station: Temporary pedestrian access changes from Tuesday 24 October to March 2024', 'Croydon Station: Temporary pedestrian access changes from Thursday 9 November to late November 2023', 'Boronia Station: Temporary car space closures from Monday 13 November to Friday 24 November 2023', 'Pakenham Station: Station closure from 10pm Friday 24 November to 3am Monday 11 December 2023', 'Merlynston Station: Car Park opening from Friday 17 November 2023', 'Union Station: Car park and bus stop openings from late 2023']'''
+    # return webscraper.ptv_disruptions(trip_type)
 
 # placeholder feature
 # def getServiceInfo():

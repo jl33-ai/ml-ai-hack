@@ -19,12 +19,12 @@ https://github.com/Lewington-pitsos/ouchcover
 # Features 
 ## Priority
 - [x] github link
-- [ ] streamlit secrets to store api keys
+- [x] streamlit secrets to store api keys
 - [ ] Metro details: lines, stations, depature and arrival times
 - [ ] myki information via web scraping main page
-- [ ] Disruptions via PTV API
+- [x] Disruptions via PTV API
 - [ ] Whats on Melb via web scraping
-- [ ] DEPLOY
+- [x] DEPLOY
 - [ ] fine tuning
 - [x] Current location via IP address API
 - [x] OpenWeather (apparent temp, UV index, rain percentage chance)

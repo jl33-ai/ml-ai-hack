@@ -4,6 +4,7 @@ from openai import OpenAI
 NUM_ITERS = 3
 
 client = OpenAI(api_key=st.secrets['ai_api'])
+first_run = True
 
 with st.sidebar:
     # ADD THIS TO BOTTOM LEFT
@@ -12,7 +13,7 @@ with st.sidebar:
     "👨‍🌾 Justin"
     "🐧 Harrison"
     "🐯 Will (LLM master and Site Engineer)"
-    "🐙 Jane"
+    "🧚‍♀️ Jane"
     "---"
     "For [ML AI HACK 2023](https://www.aihackmelb.com)"
     "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
@@ -28,6 +29,10 @@ for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
 if prompt := st.chat_input():
+    if (first_run):
+
+        first_run = False
+
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 

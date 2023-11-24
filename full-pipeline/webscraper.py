@@ -65,9 +65,7 @@ def ptv_disruptions(news=False, transport_option="train"):
     disruption_url = "https://www.ptv.vic.gov.au/disruptions/disruptions-information/#"
 
     # Depending on the transport type affects distruption
-    select_transport_option(transport_option)
-
-    return "Error occured in data extraction"
+    return select_transport_option(transport_option)
 
 
 def select_transport_option(option):
@@ -84,21 +82,19 @@ def select_transport_option(option):
 
     button_id = option_ids.get(option.lower())
     if not button_id:
-        print("Invalid option")
         return
 
     try:
         button = driver.find_element(By.ID, button_id)
         button.click()
-    except NoSuchElementException:
-        print("Button not found")
+    except:
+        pass
 
     try:
         accordion_button = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.CLASS_NAME, "accordion__button"))
         )
         accordion_button.click()
-        print("Click successful")
         html_content = driver.page_source
         raw_html = Bs(html_content, 'html.parser')
         
@@ -106,18 +102,16 @@ def select_transport_option(option):
         if raw_html:
             live_updates = raw_html.find("div", class_={"accordion LiveTravelUpdates__accordion"})
             # print(live_updates)
-            updates_list = live_updates.findAll("li")
-            for update in updates_list  :
-                print(update.text)
-                print("-------------------------------")
-            return updates_list
-        else:
-            print("Error")
+            updates_list = live_updates.find_all("li")
+        
+            return [update.text for update in updates_list]
         
 
     finally:
         # Close the WebDriver
         driver.quit()
+
+    return 
 
 # Weather data
 # Melbourne lat and long 37.8136, 144.9631
@@ -180,27 +174,36 @@ def melb_events():
     soup = soup_maker(url)
     event_list = soup.find("div", class_="list-module-contents list-results")
     event_list = event_list.find_all("div", class_="page-preview fill-height preview-type-list-square")
+    
+    out = {}
+    
     for event in event_list:
         try:
             event_html = event.find("a", class_="main-link")
-            # print(event_html.find("data-gtm-variable-label"))
             title = event_html.find("h2", class_="title").text
             summary = event.find("p", class_="summary").text
             event_link = event.find("a")
             event_link = f"{base_url}{event_link.get('href')}"
-            event_time = event_html.find("time").text
+            event_date = event_html.find("time").text
             event_type = event.find("ul", class_="tag-list").text
+
+            out[event_link] = {
+                                "title": title,
+                                "summary": summary,
+                                "event_date": event_date,
+                                "event_type": event_type,
+                            }
+
         except:
             pass
-            # print("Not event")
-        
+
+    
+    return out
         
 
 # Replace 'your_api_key' with your actual OpenWeatherMap API key
 api_key = '54eb710c29de0ff841c5889195af540d'
 
-melb_events()
-# get_weather(api_key, current_weather=False, forcast=True)
-# ptv_disruptions()
-# ptv_disruptions(transport_option="bus")
-
+print(ptv_disruptions())
+print("\n")
+print(melb_events())
