@@ -9,11 +9,11 @@ first_run = True
 with st.sidebar:
     # ADD THIS TO BOTTOM LEFT
     "# Made by:"
-    "🐬 Hannah"
-    "👨‍🌾 Justin"
     "🐧 Harrison"
-    "🐯 Will (LLM master and Site Engineer)"
+    "🐬 Hannah"
     "🧚‍♀️ Jane"
+    "👨‍🌾 Justin"
+    "🐯 Will"
     "---"
     "For [ML AI HACK 2023](https://www.aihackmelb.com)"
     "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"

@@ -32,7 +32,7 @@ DETAILS = [
     }, 
     {
         "name": "getCurrEvents",
-        "description": '''returns an array of json files like: 
+        "description": '''returns a list of jsons of upcoming events in melbourne with syntax like: 
                           {'title': name of the event, 
                            'summary': brief information about the event, 
                            'event_date': relative date of event (current year), 
