@@ -7,12 +7,11 @@ NUM_ITERS = 3
 load_dotenv()
 
 with st.sidebar:
-    # ADD THIS TO BOTTOM LEFT 
+    # ADD THIS TO BOTTOM LEFT
     openai.api_key =  os.getenv('MY_VARIABLE')
-    #print(openai_api_key)
-    
+
     "# Made by "
-    "🐬 Hannah" 
+    "🐬 Hannah"
     "👨‍🌾 Justin"
     "🐠 Harrison"
     "🐯 Will (LLM master and Site Engineer)"
@@ -54,7 +53,7 @@ if prompt := st.chat_input():
 
             # new message generated from feature output
             feature_responses.append({"role": "function", "name": desired_feature['name'], "content": "Result = " + str(feature_response)})
-        
+
             # features not needed to answer query/all relevant features utilised
         elif finish_reason == 'stop':
             # feature-enriched answer is what the user wants
