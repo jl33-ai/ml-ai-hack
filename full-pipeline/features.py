@@ -45,9 +45,9 @@ def getStartingLocation():
     print(response)
     return response['latitude'], response['longitude']
 
-def getCurrentWeather(latitude, longitude):
-    latitude, longitude = float(latitude), float(longitude)
-    return requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=apparent_temperature&hourly=apparent_temperature&hourly=precipitation_probabiliy&daily=uv_index_max").json()
+def getCurrentWeather():
+    latitude, longitude = getStartingLocation()
+    return requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={float(latitude)}&longitude={float(longitude)}&current=apparent_temperature&hourly=apparent_temperature&hourly=precipitation_probabiliy&daily=uv_index_max").json()
 
 # placeholder feature
 # def getServiceInfo():

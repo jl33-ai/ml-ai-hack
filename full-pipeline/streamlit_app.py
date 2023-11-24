@@ -46,9 +46,9 @@ if prompt := st.chat_input():
             # get the signature of the feature from constant array
             feature_function = features.OPTIONS.get(desired_feature.name)
             # arguments are located in the response json
-            args = list(json.loads(desired_feature.arguments).values())
+            # args = list(json.loads(desired_feature.arguments).values())
             # perform: response = feature(arg1, arg2, arg3)
-            feature_response = feature_function(*args)
+            feature_response = feature_function #(*args)
 
             # new message generated from feature output
             feature_responses.append({"role": "function", "name": desired_feature.name, "content": "Result = " + str(feature_response)})
