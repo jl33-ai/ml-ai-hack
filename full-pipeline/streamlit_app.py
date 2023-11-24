@@ -14,34 +14,6 @@ first_run = True
 def convert_chat_to_json(chat_history):
     return json.dumps(chat_history, indent=2)
 
-'''
-# In the sidebar or wherever you want the button
-with st.sidebar:
-    chat_history_json = convert_chat_to_json(st.session_state.messages)
-    # Create a string buffer
-    chat_history_buffer = StringIO(chat_history_json)
-    # Create the download button
-    st.download_button(
-        label="Download Chat History",
-        data=chat_history_buffer,
-        file_name="chat_history.json",
-        mime="application/json"
-    )
-'''
-
-    # ADD THIS TO BOTTOM LEFT
-
-with st.sidebar:
-    "# Made by:"
-    "🐧 Harrison"
-    "🐬 Hannah"
-    "🧚‍♀️ Jane"
-    "👨‍🌾 Justin"
-    "🐯 Will"
-    "---"
-    "For [ML AI HACK 2023](https://www.aihackmelb.com)"
-    "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
-
 
 
 
@@ -53,6 +25,32 @@ if "messages" not in st.session_state:
 
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
+
+
+with st.sidebar:
+    st.write('# Save this Chat')
+    chat_history_json = convert_chat_to_json(st.session_state.messages)
+    # Create a string buffer
+    chat_history_buffer = StringIO(chat_history_json)
+    # Create the download button
+    st.download_button(
+        label="Download Chat History",
+        data=chat_history_buffer,
+        file_name="chat_history.json",
+        mime="application/json"
+    )
+    st.markdown("---")
+    "# Made by:"
+    "🐧 Harrison"
+    "🐬 Hannah"
+    "🧚‍♀️ Jane"
+    "👨‍🌾 Justin"
+    "🐯 Will"
+    st.markdown("---")
+    "For [ML AI HACK 2023](https://www.aihackmelb.com)"
+    "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
+
+
 
 if prompt := st.chat_input():
     if (first_run):
