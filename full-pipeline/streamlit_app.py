@@ -39,7 +39,7 @@ with st.sidebar:
     #)
     
     # map
-    m = folium.Map([-37.818240, 144.966396], zoom_start=10)
+    m = folium.Map([-37.818240, 144.966396], zoom_start=14)
     folium.Marker([-37.818240, 144.966396], popup="Flinders St. Station").add_to(m)
     st_folium(m, width=300, height=300)    
 
