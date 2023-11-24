@@ -1,12 +1,32 @@
 import streamlit as st, features
 from openai import OpenAI
+from io import StringIO
+import json
+
 
 NUM_ITERS = 3
 
 client = OpenAI(api_key=st.secrets['ai_api'])
 first_run = True
 
+
+# Function to convert chat messages to a JSON string
+def convert_chat_to_json(chat_history):
+    return json.dumps(chat_history, indent=2)
+
+# In the sidebar or wherever you want the button
 with st.sidebar:
+    chat_history_json = convert_chat_to_json(st.session_state["messages"])
+    # Create a string buffer
+    chat_history_buffer = StringIO(chat_history_json)
+    # Create the download button
+    st.download_button(
+        label="Download Chat History",
+        data=chat_history_buffer,
+        file_name="chat_history.json",
+        mime="application/json"
+    )
+
     # ADD THIS TO BOTTOM LEFT
     "# Made by:"
     "🐧 Harrison"
@@ -17,6 +37,8 @@ with st.sidebar:
     "---"
     "For [ML AI HACK 2023](https://www.aihackmelb.com)"
     "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
+
+
 
 
 st.title("Dora Transport")
