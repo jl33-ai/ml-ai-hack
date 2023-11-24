@@ -102,10 +102,18 @@ def select_transport_option(option):
         if raw_html:
             live_updates = raw_html.find("div", class_={"accordion LiveTravelUpdates__accordion"})
             # print(live_updates)
-            updates_list = live_updates.find_all("li")
         
-            return [update.text for update in updates_list]
+            out = {}
+
+            for update in live_updates.find_all("li"):
+                location, details = update.split(":")
+
+                if location not in out.keys:
+                    out[location] = [details]
+                else:
+                    out[location].append(details)
         
+            return out
 
     finally:
         # Close the WebDriver

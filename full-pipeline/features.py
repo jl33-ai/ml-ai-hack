@@ -43,7 +43,7 @@ DETAILS = [
     },
     {
         "name": "getDistruptions",
-        "description": "returns a list of strings describing distruptions in the ptv network currently on all trainlines",
+        "description": "returns a json with keys as destinations like lines or stations and values as a list of strings containing the latest distruptions",
         "parameters": {
             "type": "object",
             "properties": {}
