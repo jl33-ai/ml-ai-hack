@@ -36,26 +36,26 @@ if prompt := st.chat_input():
     # check if model wants to utilise a custom feature
     for _i in range(NUM_ITERS):
         # api output
-        response = client.chat.completions.create(model="gpt-4", messages=feature_responses, functions=features.DETAILS)['choices'][0]
-        message = response['message']
-        finish_reason = response['finish_reason']
+        response = client.chat.completions.create(model="gpt-4", messages=feature_responses, functions=features.DETAILS).choices[0]
+        message = response.message
+        finish_reason = response.finish_reason
 
         if finish_reason == "function_call":
             # model requests feature in form of json
-            desired_feature = message['function_call']
+            desired_feature = message.function_call
             # get the signature of the feature from constant array
-            feature_function = features.OPTIONS.get(desired_feature['name'])
+            feature_function = features.OPTIONS.get(desired_feature.name)
             # arguments are located in the response json
-            args = list(json.loads(desired_feature['arguments']).values())
+            args = list(json.loads(desired_feature.arguments).values())
             # perform: response = feature(arg1, arg2, arg3)
             feature_response = feature_function(*args)
 
             # new message generated from feature output
-            feature_responses.append({"role": "function", "name": desired_feature['name'], "content": "Result = " + str(feature_response)})
+            feature_responses.append({"role": "function", "name": desired_feature.name, "content": "Result = " + str(feature_response)})
 
             # features not needed to answer query/all relevant features utilised
         elif finish_reason == 'stop':
             # feature-enriched answer is what the user wants
-            st.session_state.messages.append({"role": "assistant", "content": message['content']})
+            st.session_state.messages.append({"role": "assistant", "content": message.content})
             st.chat_message("assistant").write(message['content'])
             break
