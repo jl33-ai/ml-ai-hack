@@ -11,7 +11,7 @@ https://github.com/Lewington-pitsos/ouchcover
 
 
 # Appearance
-- [ ] icons for roles
+- [x] icons for roles
 - [ ] colour scheme
 - [ ] useful widgets
 
