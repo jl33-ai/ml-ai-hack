@@ -4,21 +4,22 @@ import requests
 DETAILS = [
     {
         "name": "getCurrentWeather",
-        "description": '''Get current and future apparent temperature,
+        "description": '''Get current and future apparent temperature at current location,
                           max UV index for the day, 
-                          and hourly precipitation probability 
+                          and hourly precipitation probability
                           (Probability of precipitation with more than 0.1 mm of the preceding hour)''',
         "parameters": {
             "type": "object",
-            "properties": {
-                "latitude": {
-                    "type": "string",
-                },
-                "longitude": {
-                    "type": "string",
-                }
-            },
-            "required": ["latitude", "longitude"]
+            "properties": {}
+            # "properties": {
+            #     "latitude": {
+            #         "type": "string",
+            #     },
+            #     "longitude": {
+            #         "type": "string",
+            #     }
+            # },
+            # "required": ["latitude", "longitude"]
         }
     },
     {
@@ -42,7 +43,6 @@ DETAILS = [
 # return lat, long pair
 def getStartingLocation():
     response = requests.get("https://ipapi.co/json/").json()
-    print(response)
     return response['latitude'], response['longitude']
 
 def getCurrentWeather():
