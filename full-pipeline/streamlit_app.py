@@ -30,6 +30,8 @@ with st.sidebar:
 '''
 
     # ADD THIS TO BOTTOM LEFT
+
+with st.sidebar
     "# Made by:"
     "🐧 Harrison"
     "🐬 Hannah"
