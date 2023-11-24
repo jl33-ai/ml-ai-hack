@@ -18,8 +18,7 @@ st.set_page_config(page_title="Dora Transport", page_icon='🗺️')
 st.title("🗺️ Dora Transport")
 st.caption("🗺️🎒🚂 Let me guide you from A to B")
 
-lat, long = features.getStartingLocation()
-m = folium.Map([float(lat), float(long)])
+m = folium.Map([-37.8138889, 144.9630556])
 st_folium(m)
 
 if "messages" not in st.session_state:
