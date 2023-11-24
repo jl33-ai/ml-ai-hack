@@ -1,3 +1,4 @@
 full-pipeline/.env
 ao_sightings.csv
 full-pipeline/__pycache__
+.vscode
