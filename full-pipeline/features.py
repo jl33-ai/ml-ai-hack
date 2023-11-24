@@ -1,4 +1,4 @@
-import requests, streamlit as st
+import requests, streamlit as st, json
 # googlemaps
 
 # how model uses APIs
@@ -95,8 +95,8 @@ DETAILS = [
 
 # return lat, long pair
 def getStartingLocation():
-    response = requests.get("https://ipapi.co/json/").json()
-    print(response)
+    response = json.loads(requests.get("https://ipapi.co/json/").json())
+    
     return response['latitude'], response['longitude']
 
 def getCurrentWeather():
