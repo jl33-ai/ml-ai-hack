@@ -56,7 +56,7 @@ if prompt := st.chat_input():
         first_run = False
 
     st.session_state.messages.append({"role": "user", "content": prompt})
-    st.chat_message("user", avatar=🤔).write(prompt)
+    st.chat_message("user", avatar='🤔').write(prompt)
 
     feature_responses = st.session_state.messages.copy()
 
