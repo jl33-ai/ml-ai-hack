@@ -28,17 +28,17 @@ for msg in st.session_state.messages:
 
 
 with st.sidebar:
-    st.write('# Save this Chat')
-    chat_history_json = convert_chat_to_json(st.session_state.messages)
+    #st.write('# Save this Chat')
+    #chat_history_json = convert_chat_to_json(st.session_state.messages)
     # Create a string buffer
-    chat_history_buffer = StringIO(chat_history_json)
+    #chat_history_buffer = StringIO(chat_history_json)
     # Create the download button
-    st.download_button(
-        label="Download Chat History",
-        data=chat_history_buffer,
-        file_name="chat_history.json",
-        mime="application/json"
-    )
+    #st.download_button(
+    #    label="Download Chat History",
+    #    data=chat_history_buffer,
+    #    file_name="chat_history.json",
+    #    mime="application/json"
+    #)
     st.markdown("---")
     "# Made by:"
     "🐧 Harrison"
