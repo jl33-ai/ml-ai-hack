@@ -1,4 +1,4 @@
-import streamlit as st, features, json
+import streamlit as st, features
 from openai import OpenAI
 
 NUM_ITERS = 3
