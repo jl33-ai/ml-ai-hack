@@ -37,14 +37,14 @@ with st.sidebar:
     #    file_name="chat_history.json",
     #    mime="application/json"
     #)
-    st.markdown("---")
+    st.divider()
     "# Made by:"
     "🐧 Harrison"
     "🐬 Hannah"
     "🧚‍♀️ Jane"
     "👨‍🌾 Justin"
     "🐯 Will"
-    st.markdown("---")
+    st.divider()
     "For [ML AI HACK 2023](https://www.aihackmelb.com)"
     "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
 
