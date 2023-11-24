@@ -10,7 +10,7 @@ with st.sidebar:
     "# Made by:"
     "🐬 Hannah"
     "👨‍🌾 Justin"
-    "🐠 Harrison"
+    "🐧 Harrison"
     "🐯 Will (LLM master and Site Engineer)"
     "🐙 Jane"
     "---"

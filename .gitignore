@@ -1,3 +1,4 @@
 ao_sightings.csv
 full-pipeline/__pycache__/*
 .vscode
+.streamlit/secrets.toml
