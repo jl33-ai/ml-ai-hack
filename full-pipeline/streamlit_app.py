@@ -57,5 +57,5 @@ if prompt := st.chat_input():
         elif finish_reason == 'stop':
             # feature-enriched answer is what the user wants
             st.session_state.messages.append({"role": "assistant", "content": message.content})
-            st.chat_message("assistant").write(message['content'])
+            st.chat_message("assistant").write(message.content)
             break
