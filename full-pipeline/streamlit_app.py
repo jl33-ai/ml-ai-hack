@@ -40,7 +40,9 @@ with st.sidebar:
     
     # map
     m = folium.Map([-37.818240, 144.966396])
-    st_folium(m, width=300 height=300)    
+    folium.marker([-37.818240, 144.966396], popup="Flinders St. Station")
+    st_folium(m, width=300, height=300)    
+
     "# Made by:"
     "🐧 Harrison"
     "🐬 Hannah"
