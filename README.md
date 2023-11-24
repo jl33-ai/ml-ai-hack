@@ -70,7 +70,7 @@ Outline your code of conduct for contributors. This ensures a welcoming and incl
 **TEAM MEMBERS**
 - 🐬 **_Hannah_**
 - 🦄 **_Justin_**
-- 🐠 **_Harrison_**
+- 🐧 **_Harrison_**
 - 🐯 **_Will_**
 - 🐙 **_Jane_**
 
