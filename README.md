@@ -15,7 +15,7 @@
 - [License](#license)
 
 ## Introduction
-###Summary of Idea
+### Summary of Idea \n
 Google maps +, tailored to Aus needs of PTV data, can be extended to further regions. When taking PTV, often you talk to a friend to understand what to do. Enhances the mapping and communication experience.
 The Aussie problem: The inefficiencies and complexity of the PTV system (specifically for international students, people using PTV for the first time, people with language barriers/inexperience with metro system) 
 The Solution: A large language model which is contextualized with the entire melbourne metro system, and continually scrapes the web to check for updates etc (including from the PTV app, and cross referenced with news, weather. Interpretable
