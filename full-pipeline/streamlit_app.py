@@ -19,10 +19,10 @@ st.title("Dora Transport")
 st.caption("🗺️🎒🚂 Let me guide you from A to B")
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "Where would you like to go?"}]
 
 for msg in st.session_state.messages:
-    st.chat_message(msg["role"]).write(msg["content"])
+    st.chat_message(msg["role"], avatar='🗺️').write(msg["content"])
 
 
 with st.sidebar:
