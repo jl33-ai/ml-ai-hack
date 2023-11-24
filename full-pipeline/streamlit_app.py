@@ -18,9 +18,6 @@ st.set_page_config(page_title="Dora Transport", page_icon='🗺️')
 st.title("🗺️ Dora Transport")
 st.caption("🗺️🎒🚂 Let me guide you from A to B")
 
-m = folium.Map([-37.8138889, 144.9630556])
-st_folium(m)
-
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "Where would you like to go?"}]
 
@@ -40,14 +37,22 @@ with st.sidebar:
     #    file_name="chat_history.json",
     #    mime="application/json"
     #)
+    
+    # map
+    m = folium.Map([-37.8138889, 144.9630556])
+    st_folium(m)
+    
     st.divider()
+    
     "# Made by:"
     "🐧 Harrison"
     "🐬 Hannah"
     "🧚‍♀️ Jane"
     "👨‍🌾 Justin"
     "🐯 Will"
+    
     st.divider()
+    
     "For [ML AI HACK 2023](https://www.aihackmelb.com)"
     "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
 
