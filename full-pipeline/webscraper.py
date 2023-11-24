@@ -111,14 +111,8 @@ def select_transport_option(option):
 
                 if (len(update_l) != 2):
                     out['contained in details'].append(first)
-                    continue
-
-                location, details = first, update_l[1]
-
-                if location not in out.keys():
-                    out[location] = [details]
                 else:
-                    out[location].append(details)
+                    out[first] = update_l[1]
         
             return out
 
