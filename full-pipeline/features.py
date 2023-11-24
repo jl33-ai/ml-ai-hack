@@ -1,4 +1,5 @@
-import requests, googlemaps, streamlit as st
+import requests, streamlit as st
+# googlemaps
 
 # how model uses APIs
 DETAILS = [
@@ -107,7 +108,8 @@ def getEvents():
     # return webscraper.melb_events()
 
 def directions(start, end, leave_time):
-    return googlemaps.Client(key=st.secrets['gmaps_key']).directions(start, end, mode='transit', departure_time=leave_time)
+    return
+    # return googlemaps.Client(key=st.secrets['gmaps_key']).directions(start, end, mode='transit', departure_time=leave_time)
 
 def getTrainDistruptions():
     # default is train trips
