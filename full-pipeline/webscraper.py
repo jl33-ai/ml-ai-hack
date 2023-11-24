@@ -103,12 +103,19 @@ def select_transport_option(option):
             live_updates = raw_html.find("div", class_={"accordion LiveTravelUpdates__accordion"})
             # print(live_updates)
         
-            out = {}
+            out = {'contained in details': []}
 
             for update in live_updates.find_all("li"):
-                location, details = update.split(":")
+                update_l = update.text.split(":")
+                first = update_l[0]
 
-                if location not in out.keys:
+                if (len(update_l) != 2):
+                    out['contained in details'].append(first)
+                    continue
+
+                location, details = first, update_l[1]
+
+                if location not in out.keys():
                     out[location] = [details]
                 else:
                     out[location].append(details)
