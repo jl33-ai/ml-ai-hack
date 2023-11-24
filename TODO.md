@@ -8,11 +8,13 @@ https://github.com/Lewington-pitsos/ouchcover
 - [ ] Streamlit Website
     - [x] functional chatbot 
         - [ ] Fine tuned 
+   
     
 # Appearance
 - [ ] icons for roles
 - [ ] colour scheme
 - [ ] useful widgets
+
 
 # Features 
 ## Priority
@@ -23,7 +25,6 @@ https://github.com/Lewington-pitsos/ouchcover
 - [x] Current location via IP address API
 - [x] OpenWeather (apparent temp, UV index, rain percentage chance)
 
-
 ## Useful but optional
 - [ ] Whats on Melb via web scraping
 - [ ] current location via gps browser permission 
@@ -31,6 +32,7 @@ https://github.com/Lewington-pitsos/ouchcover
 - [ ] facebook group AOs??
 - [ ] Loading animation top right change to train/bus emojis
 - [ ] Explore extra widgets
+
 
 # Pre-submission
 - [ ] update readme
