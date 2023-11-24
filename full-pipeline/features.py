@@ -1,5 +1,4 @@
-from full-pipeline.webscraper import ptv_disruptions
-import requests, webscraper
+import requests
 
 # how model uses APIs
 DETAILS = [
