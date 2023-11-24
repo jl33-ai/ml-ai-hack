@@ -95,7 +95,7 @@ DETAILS = [
 
 # return lat, long pair
 def getStartingLocation():
-    response = json.loads(requests.get("https://ipapi.co/json/").json())
+    response = json.loads(requests.get("https://ipapi.co/json/"))
     
     return response['latitude'], response['longitude']
 
