@@ -15,18 +15,28 @@
 - [License](#license)
 
 ## Introduction
-Provide a more detailed explanation of the project. Include the problem statement and the solution your project offers.
+###Summary of Idea
+Google maps +, tailored to Aus needs of PTV data, can be extended to further regions. When taking PTV, often you talk to a friend to understand what to do. Enhances the mapping and communication experience.
+The Aussie problem: The inefficiencies and complexity of the PTV system (specifically for international students, people using PTV for the first time, people with language barriers/inexperience with metro system) 
+The Solution: A large language model which is contextualized with the entire melbourne metro system, and continually scrapes the web to check for updates etc (including from the PTV app, and cross referenced with news, weather. Interpretable
+The Outcome: Safer commuters, less missed exams, more comfortable commuters, completely tailored interaction, support for multiple languages.
+***TLDR:*** Dora the explorer talking map to help both newbies and veterans interface with and navigate the Public Transport Victoria System.
 
 ## Features
-List the key features of the project. What makes your project stand out?
+Text communication with an advanced Large Language Model with multi-language support
+Integration between live information in Melbourne, such as;
+- Live disruptions on PTV
+- Events happening in Melbourne
+- Weather and weather wanrings
 
 ## Technologies Used
 Mention the technologies, languages, frameworks, and tools used in the project.
 Our project leverages a diverse and powerful tech stack to deliver a robust and efficient solution:
+LLM's, API services, Streamlit, Webscraping, Python, Haystack
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Python, Beautiful Soup 4, SciPy, R, HayStack, Streamlit in conjunction with RAG and OpenAI
 
 
 <!-- ROADMAP -->
@@ -45,25 +55,14 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
-Instructions to set up the project locally. This section usually includes:
+Visit https://dora-transport.streamlit.app/ to use our app :))
 
 ### Prerequisites
-- List of necessary software and tools and how to install them.
-
-### Installation
-- Step-by-step guide on how to get a development environment running.
+None, just see the url
 
 ## Usage
-- Instructions on how to use the application, with examples.
+- Ask our friendly PTV bot any questions you have about PTV
 
-## How to Contribute
-Guidelines for contributing to the project:
-- How to report a bug
-- How to suggest a new feature
-- How to submit pull requests
-
-## Code of Conduct
-Outline your code of conduct for contributors. This ensures a welcoming and inclusive environment for everyone.
 
 ## Team
 - Introduce your team members and their roles in the project.
@@ -80,7 +79,7 @@ Outline your code of conduct for contributors. This ensures a welcoming and incl
 **[🔗 GOOGLE DOC LINK](https://docs.google.com/document/d/1pVj3FmlGDhs9BIuabXdNTblnP1vsrx4xRDYcDxCHXQY/edit?usp=sharing)**
   
 ## License
-- State the license under which your project is available. Common licenses include MIT, GPL, or Apache 2.0.
+- MIT
 
 ---
 
