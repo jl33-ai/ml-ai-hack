@@ -40,19 +40,13 @@ with st.sidebar:
     
     # map
     m = folium.Map([-37.8138889, 144.9630556])
-    st_folium(m)
-    
-    st.divider()
-    
+    st_folium(m, height=400)    
     "# Made by:"
     "🐧 Harrison"
     "🐬 Hannah"
     "🧚‍♀️ Jane"
     "👨‍🌾 Justin"
-    "🐯 Will"
-    
-    st.divider()
-    
+    "🐯 Will"    
     "For [ML AI HACK 2023](https://www.aihackmelb.com)"
     "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
 
