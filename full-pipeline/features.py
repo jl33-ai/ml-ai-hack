@@ -31,12 +31,11 @@ DETAILS = [
         }
     }, 
     {
-        "name": "getCurrEvents",
-        "description": '''returns a list of jsons of upcoming events in melbourne with syntax like: 
-                          {'title': name of the event, 
-                           'summary': brief information about the event, 
-                           'event_date': relative date of event (current year), 
-                           'event_type': type of event}''',
+        "name": "getMelbourneEvents",
+        "description": '''returns a json containing the latest events in melbourne, the syntax for each event json is: 
+                          name of event: {'summary': brief information about the event, 
+                                          'event_date': relative date of event (current year), 
+                                          'event_type': type of event}''',
         "parameters": {
             "type": "object",
             "properties": {}
@@ -61,7 +60,7 @@ def getCurrentWeather():
     latitude, longitude = getStartingLocation()
     return requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={float(latitude)}&longitude={float(longitude)}&current=apparent_temperature&hourly=apparent_temperature&hourly=precipitation_probabiliy&daily=uv_index_max").json()
 
-def getCurrEvents():
+def getMelbourneEvents():
     # hard coded, in prod we should request these deets at the start of the day
     return '''{'https://whatson.melbourne.vic.gov.au//things-to-do/christmas-treasure-hunt': {'title': 'Christmas Treasure Hunt', 'summary': 'Go on a Christmas adventure in Carlton Gardens.', 'event_date': '10 Dec', 'event_type': '\nFree\nFamily and kids\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/new-years-eve-twilight-dinner-package': {'title': "New Year's Eve Twilight Dinner Package", 'summary': "Enjoy a dining and drinks package in Melbourne's 160-year-old historic cellar.", 'event_date': '31 Dec', 'event_type': '\nEvents\nFood and wine\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/docklands-christmas-maze': {'title': 'Docklands Christmas Maze', 'summary': 'Find your holiday cheer at the giant Christmas maze, with amazing prizes to be won.', 'event_date': '29 Nov', 'event_type': '\nFree\nFamily and kids\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/titanic-the-artefact-exhibition': {'title': 'Titanic: The Artefact Exhibition', 'summary': 'Explore human stories of the Titanic told through 200+ artefacts recovered from the legendary ship.', 'event_date': '16 Dec', 'event_type': '\nExhibition\nHistory\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/eric-prydz-holo': {'title': 'Eric Prydz: Holo', 'summary': 'Swedish producer Prydz brings his jaw-dropping Holo live show to Melbourne.', 'event_date': '8', 'event_type': '\nMusic\nEntertainment\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/ngv-architecture-commission-this-is-air': {'title': 'NGV Architecture Commission: (This is) Air', 'summary': 'The NGV 2023 Architecture Commission is a large-scale installation that makes the invisible visible.', 'event_date': '23 Nov', 'event_type': '\nFree\nArt\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/christmas-square': {'title': 'Christmas Square', 'summary': 'Discover a Christmas wonderland featuring the city’s giant tree.', 'event_date': '24 Nov', 'event_type': '\nFree\nFamily and kids\n'}, 'https://whatson.melbourne.vic.gov.au//things-to-do/cirque-du-soleil-luzia': {'title': 'Cirque du Soleil: Luzia', 'summary': 'Go on a vibrant journey through worlds filled with wonders and artistry with Cirque du Soleil.', 'event_date': '24 Mar', 'event_type': '\nTheatre\nDance\n'}}'''
     # return webscraper.melb_events()

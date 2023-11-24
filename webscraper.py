@@ -187,12 +187,11 @@ def melb_events():
             event_date = event_html.find("time").text
             event_type = event.find("ul", class_="tag-list").text
 
-            out[event_link] = {
-                                "title": title,
-                                "summary": summary,
-                                "event_date": event_date,
-                                "event_type": event_type,
-                            }
+            out[title] = {
+                            "summary": summary,
+                            "event_date": event_date,
+                            "event_type": event_type,
+                        }
 
         except:
             pass
