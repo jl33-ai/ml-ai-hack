@@ -1,22 +1,21 @@
-import streamlit as st, os, openai, features, json
-from dotenv import load_dotenv
+import streamlit as st, features, json
+from openai import OpenAI
 
 NUM_ITERS = 3
 
-# Load the .env file
-load_dotenv()
+client = OpenAI(api_key=st.secrets['ai_api'])
 
 with st.sidebar:
     # ADD THIS TO BOTTOM LEFT
-    openai.api_key =  os.getenv('MY_VARIABLE')
-
-    "# Made by "
+    "# Made by:"
     "🐬 Hannah"
     "👨‍🌾 Justin"
     "🐠 Harrison"
     "🐯 Will (LLM master and Site Engineer)"
     "🐙 Jane"
-    "for [ML AI HACK 2023](https://www.aihackmelb.com)"
+    "---"
+    "For [ML AI HACK 2023](https://www.aihackmelb.com)"
+    "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
 
 
 st.title("Dora Transport")
@@ -37,7 +36,7 @@ if prompt := st.chat_input():
     # check if model wants to utilise a custom feature
     for _i in range(NUM_ITERS):
         # api output
-        response = openai.ChatCompletion.create(model="gpt-4", messages=feature_responses, functions=features.DETAILS)['choices'][0]
+        response = client.chat.completions.create(model="gpt-4", messages=feature_responses, functions=features.DETAILS)['choices'][0]
         message = response['message']
         finish_reason = response['finish_reason']
 

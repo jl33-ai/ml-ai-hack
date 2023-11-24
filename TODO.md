@@ -8,8 +8,8 @@ https://github.com/Lewington-pitsos/ouchcover
 - [ ] Streamlit Website
     - [x] functional chatbot 
         - [ ] Fine tuned 
-   
-    
+
+
 # Appearance
 - [ ] icons for roles
 - [ ] colour scheme
@@ -18,15 +18,19 @@ https://github.com/Lewington-pitsos/ouchcover
 
 # Features 
 ## Priority
+- [x] github link
+- [ ] streamlit secrets to store api keys
 - [ ] Metro details: lines, stations, depature and arrival times
 - [ ] myki information via web scraping main page
 - [ ] Disruptions via PTV API
-- [ ] journey planner: via google maps api?
+- [ ] Whats on Melb via web scraping
+- [ ] DEPLOY
+- [ ] fine tuning
 - [x] Current location via IP address API
 - [x] OpenWeather (apparent temp, UV index, rain percentage chance)
 
 ## Useful but optional
-- [ ] Whats on Melb via web scraping
+- [ ] journey planner: via google maps api?
 - [ ] current location via gps browser permission 
 - [ ] Annoyance Score
 - [ ] facebook group AOs??
@@ -37,3 +41,6 @@ https://github.com/Lewington-pitsos/ouchcover
 # Pre-submission
 - [ ] update readme
 - [ ] Video
+
+- [ ] pitch night presentation
+    - [ ] mockup

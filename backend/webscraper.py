@@ -45,7 +45,7 @@ headers = {
     }
 
 # run when using selenium
-# driver = webdriver.Chrome()
+driver = webdriver.Chrome()
 
 """
 Function to make all generic request calls
