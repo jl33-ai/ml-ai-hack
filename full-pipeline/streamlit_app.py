@@ -56,7 +56,7 @@ if prompt := st.chat_input():
         first_run = False
 
     st.session_state.messages.append({"role": "user", "content": prompt})
-    st.chat_message("user").write(prompt)
+    st.chat_message("user", avatar=🤔).write(prompt)
 
     feature_responses = st.session_state.messages.copy()
 
@@ -84,5 +84,5 @@ if prompt := st.chat_input():
         elif finish_reason == 'stop':
             # feature-enriched answer is what the user wants
             st.session_state.messages.append({"role": "assistant", "content": message.content})
-            st.chat_message("assistant", avatar=st.image('full_pipeline/favicon.webp')).write(message.content)
+            st.chat_message("assistant", avatar='🗺️').write(message.content)
             break
