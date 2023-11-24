@@ -40,7 +40,7 @@ with st.sidebar:
     
     # map
     m = folium.Map([-37.8138889, 144.9630556])
-    st_folium(m, height=400)    
+    st_folium(m, height=200)    
     "# Made by:"
     "🐧 Harrison"
     "🐬 Hannah"
