@@ -16,7 +16,7 @@ def convert_chat_to_json(chat_history):
 
 # In the sidebar or wherever you want the button
 with st.sidebar:
-    chat_history_json = convert_chat_to_json(st.session_state["messages"])
+    chat_history_json = convert_chat_to_json(st.session_state.messages)
     # Create a string buffer
     chat_history_buffer = StringIO(chat_history_json)
     # Create the download button
