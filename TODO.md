@@ -9,18 +9,27 @@ https://github.com/Lewington-pitsos/ouchcover
     - [x] functional chatbot 
         - [ ] Fine tuned 
     
-# Features 
-- [ ] Disruptions API
-- [ ] Whats on Melb via web scraping
-- [x] Current location via IP address API
-    - [ ] current location via geo in browser 
-- [x] OpenWeather
-    - [x] implement more relevant data
-- [ ] Specific route plan
-- [ ] Annoyance Score
+# Appearance
+- [ ] icons for roles
+- [ ] colour scheme
+- [ ] useful widgets
 
-# Extras
-- [ ] Loading animation
+# Features 
+## Priority
+- [ ] Metro details: lines, stations, depature and arrival times
+- [ ] myki information via web scraping main page
+- [ ] Disruptions via PTV API
+- [ ] journey planner: via google maps api?
+- [x] Current location via IP address API
+- [x] OpenWeather (apparent temp, UV index, rain percentage chance)
+
+
+## Useful but optional
+- [ ] Whats on Melb via web scraping
+- [ ] current location via gps browser permission 
+- [ ] Annoyance Score
+- [ ] facebook group AOs??
+- [ ] Loading animation top right change to train/bus emojis
 - [ ] Explore extra widgets
 
 # Pre-submission
