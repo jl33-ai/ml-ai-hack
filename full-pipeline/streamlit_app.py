@@ -1,10 +1,10 @@
 import streamlit as st, features
+import json, folium
 from openai import OpenAI
 from io import StringIO
-import json
+from streamlit_folium import st_folium
 
-
-NUM_ITERS = 3
+NUM_ITERS = 4
 
 client = OpenAI(api_key=st.secrets['ai_api'])
 first_run = True
@@ -17,6 +17,9 @@ def convert_chat_to_json(chat_history):
 st.set_page_config(page_title="Dora Transport", page_icon='🗺️')
 st.title("🗺️ Dora Transport")
 st.caption("🗺️🎒🚂 Let me guide you from A to B")
+
+m = folium.Map([*features.getStartingLocation()])
+st_folium(m)
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "Where would you like to go?"}]
