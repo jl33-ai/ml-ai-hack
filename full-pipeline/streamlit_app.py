@@ -14,7 +14,7 @@ first_run = True
 def convert_chat_to_json(chat_history):
     return json.dumps(chat_history, indent=2)
 
-st.set_page_config(page_title="Dora Transport", page_icon='favicon.webp')
+st.set_page_config(page_title="Dora Transport", page_icon='🗺️')
 st.title("Dora Transport")
 st.caption("🗺️🎒🚂 Let me guide you from A to B")
 
