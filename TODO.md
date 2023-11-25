@@ -8,21 +8,38 @@ https://github.com/Lewington-pitsos/ouchcover
 - [ ] Streamlit Website
     - [x] functional chatbot 
         - [ ] Fine tuned 
-    
-# Features 
-- [ ] Disruptions API
-- [ ] Whats on Melb via web scraping
-- [x] Current location via IP address API
-    - [ ] current location via geo in browser 
-- [x] OpenWeather
-    - [x] implement more relevant data
-- [ ] Specific route plan
-- [ ] Annoyance Score
 
-# Extras
-- [ ] Loading animation
+
+# Appearance
+- [x] icons for roles
+- [ x colour scheme
+- [ ] useful widgets
+
+
+# Features 
+## Priority
+- [ ] fine tuning
+- [ ] Disruptions via PTV API
+- [ ] static info: station info text (inc. myki info) and csv
+- [x] github link
+- [x] streamlit secrets to store api keys
+- [x] Whats on Melb via web scraping
+- [x] DEPLOY
+- [x] Current location via IP address API
+- [x] OpenWeather (apparent temp, UV index, rain percentage chance)
+
+## Useful but optional
+- [ ] journey planner: via google maps api?
+- [ ] current location via gps browser permission 
+- [ ] Annoyance Score
+- [ ] facebook group AOs??
+- [ ] Loading animation top right change to train/bus emojis
 - [ ] Explore extra widgets
 
+
 # Pre-submission
-- [ ] update readme
+- [x] update readme
 - [ ] Video
+
+- [ ] pitch night presentation
+    - [ ] mockup

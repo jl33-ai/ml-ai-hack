@@ -1,3 +1,4 @@
-full-pipeline/.env
 ao_sightings.csv
-synthesier.R
+full-pipeline/__pycache__/*
+.vscode
+.streamlit/secrets.toml
