@@ -65,7 +65,7 @@ None, just see the url
 
 # The Team
 **TEAM MEMBERS**
-- 🐬 **_Hannah_** - Business plan for commit contribution please check out dev/Hannah branch.
+- 🐬 **_Hannah_** - Business plan/Developer for commit contribution please check out dev/Hannah branch.
 - 🦄 **_Justin_** - ML Engineer
 - 🐧 **_Harrison_** - Webscraping + API
 - 🐯 **_Will_** - Backend/Frontend Engineer
