@@ -30,7 +30,7 @@ Integration between live information in Melbourne, such as;
 - Weather and weather wanrings
 
 ## Technologies Used
-Mention the technologies, languages, frameworks, and tools used in the project.
+Technologies, languages, frameworks, and tools used in the project.
 Our project leverages a diverse and powerful tech stack to deliver a robust and efficient solution:
 LLM's, API services, Streamlit, Webscraping, Python, Haystack
 
@@ -63,19 +63,15 @@ None, just see the url
 ## Usage
 - Ask our friendly PTV bot any questions you have about PTV
 
-
-## Team
-- Introduce your team members and their roles in the project.
+# The Team
 **TEAM MEMBERS**
-- 🐬 **_Hannah_**
-- 🦄 **_Justin_**
-- 🐧 **_Harrison_**
-- 🐯 **_Will_**
-- 🐙 **_Jane_**
+- 🐬 **_Hannah_** - Business plan
+- 🦄 **_Justin_** - ML Engineer
+- 🐧 **_Harrison_** - Webscraping + API
+- 🐯 **_Will_** - Backend/Frontend Engineer
+- 🐙 **_Jane_** - UI and Video Planning
 
 ## Acknowledgments
-- Credit any third-party assets or code used in the project.
-- Mention any inspirations or sources.
 **[🔗 GOOGLE DOC LINK](https://docs.google.com/document/d/1pVj3FmlGDhs9BIuabXdNTblnP1vsrx4xRDYcDxCHXQY/edit?usp=sharing)**
   
 ## License

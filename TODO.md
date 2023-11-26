@@ -11,21 +11,20 @@ https://github.com/Lewington-pitsos/ouchcover
 
 
 # Appearance
-- [ ] icons for roles
-- [ ] colour scheme
+- [x] icons for roles
+- [ x colour scheme
 - [ ] useful widgets
 
 
 # Features 
 ## Priority
+- [ ] fine tuning
+- [ ] Disruptions via PTV API
+- [ ] static info: station info text (inc. myki info) and csv
 - [x] github link
 - [x] streamlit secrets to store api keys
-- [ ] Metro details: lines, stations, depature and arrival times
-- [ ] myki information via web scraping main page
-- [x] Disruptions via PTV API
-- [ ] Whats on Melb via web scraping
+- [x] Whats on Melb via web scraping
 - [x] DEPLOY
-- [ ] fine tuning
 - [x] Current location via IP address API
 - [x] OpenWeather (apparent temp, UV index, rain percentage chance)
 
@@ -39,7 +38,7 @@ https://github.com/Lewington-pitsos/ouchcover
 
 
 # Pre-submission
-- [ ] update readme
+- [x] update readme
 - [ ] Video
 
 - [ ] pitch night presentation

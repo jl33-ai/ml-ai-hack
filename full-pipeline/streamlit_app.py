@@ -1,10 +1,10 @@
 import streamlit as st, features
+import json, folium
 from openai import OpenAI
 from io import StringIO
-import json
+from streamlit_folium import st_folium
 
-
-NUM_ITERS = 3
+NUM_ITERS = 4
 
 client = OpenAI(api_key=st.secrets['ai_api'])
 first_run = True
@@ -14,17 +14,15 @@ first_run = True
 def convert_chat_to_json(chat_history):
     return json.dumps(chat_history, indent=2)
 
-
-
-
-st.title("Dora Transport")
+st.set_page_config(page_title="Dora Transport", page_icon='🗺️')
+st.title("🗺️ Dora Transport")
 st.caption("🗺️🎒🚂 Let me guide you from A to B")
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "Where would you like to go?"}]
 
 for msg in st.session_state.messages:
-    st.chat_message(msg["role"]).write(msg["content"])
+    st.chat_message(msg["role"], avatar='🗺️').write(msg["content"])
 
 
 with st.sidebar:
@@ -39,14 +37,18 @@ with st.sidebar:
     #    file_name="chat_history.json",
     #    mime="application/json"
     #)
-    st.markdown("---")
+    
+    # map
+    m = folium.Map([-37.818240, 144.966396], zoom_start=14)
+    folium.Marker([-37.818240, 144.966396], popup="Flinders St. Station").add_to(m)
+    st_folium(m, width=300, height=300)    
+
     "# Made by:"
     "🐧 Harrison"
     "🐬 Hannah"
     "🧚‍♀️ Jane"
     "👨‍🌾 Justin"
-    "🐯 Will"
-    st.markdown("---")
+    "🐯 Will"    
     "For [ML AI HACK 2023](https://www.aihackmelb.com)"
     "Check out the [source](https://github.com/jl33-ai/ml-ai-hack)"
 
@@ -58,7 +60,7 @@ if prompt := st.chat_input():
         first_run = False
 
     st.session_state.messages.append({"role": "user", "content": prompt})
-    st.chat_message("user").write(prompt)
+    st.chat_message("user", avatar='🤔').write(prompt)
 
     feature_responses = st.session_state.messages.copy()
 
@@ -86,5 +88,5 @@ if prompt := st.chat_input():
         elif finish_reason == 'stop':
             # feature-enriched answer is what the user wants
             st.session_state.messages.append({"role": "assistant", "content": message.content})
-            st.chat_message("assistant").write(message.content)
+            st.chat_message("assistant", avatar='🗺️').write(message.content)
             break

@@ -1,4 +1,4 @@
-import requests, streamlit as st
+import requests, streamlit as st, json
 # googlemaps
 
 # how model uses APIs
@@ -50,52 +50,53 @@ DETAILS = [
             "properties": {}
         }
     },
-    {
-        "name": "directions",
-        "description": '''get step by step directions via public transport from a starting point to an ending point, leaving at a certain time. here is an example of what this might return: [
-                        {
-                            "legs": [
-                            {
-                                "steps": [
-                                {
-                                    "html_instructions": "Head northwest on Main St",
-                                    "distance": {"text": "0.1 mi", "value": 160},
-                                    "duration": {"text": "1 min", "value": 60},
-                                    // Additional information about the step
-                                },
-                                // Additional steps...
-                                ],
-                                "duration": {"text": "5 mins", "value": 300},
-                                "distance": {"text": "0.3 mi", "value": 500},
-                                // Additional information about the leg
-                            }
-                            ],
-                            "overview_polyline": {"points": "a~l~Fjk~uOnzh..."},
-                            "summary": "Main St",
-                            "warnings": ["Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths."],
-                            "waypoint_order": []
-                        }
-                    ]''',
-        "parameters": {
-            "type": "object",
-            "properties": {
-                'start': {
-                    'type': 'string'
-                },
-                'end': {
-                    'type': 'string'
-                },
-                'leave_time': {
-                    'type': 'string'
-                }
-            }
-        }
-    }
+    # {
+    #     "name": "directions",
+    #     "description": '''get step by step directions via public transport from a starting point to an ending point, leaving at a certain time. here is an example of what this might return: [
+    #                     {
+    #                         "legs": [
+    #                         {
+    #                             "steps": [
+    #                             {
+    #                                 "html_instructions": "Head northwest on Main St",
+    #                                 "distance": {"text": "0.1 mi", "value": 160},
+    #                                 "duration": {"text": "1 min", "value": 60},
+    #                                 // Additional information about the step
+    #                             },
+    #                             // Additional steps...
+    #                             ],
+    #                             "duration": {"text": "5 mins", "value": 300},
+    #                             "distance": {"text": "0.3 mi", "value": 500},
+    #                             // Additional information about the leg
+    #                         }
+    #                         ],
+    #                         "overview_polyline": {"points": "a~l~Fjk~uOnzh..."},
+    #                         "summary": "Main St",
+    #                         "warnings": ["Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths."],
+    #                         "waypoint_order": []
+    #                     }
+    #                 ]''',
+    #     "parameters": {
+    #         "type": "object",
+    #         "properties": {
+    #             'start': {
+    #                 'type': 'string'
+    #             },
+    #             'end': {
+    #                 'type': 'string'
+    #             },
+    #             'leave_time': {
+    #                 'type': 'string'
+    #             }
+    #         }
+    #     }
+    # }
 ]
 
 # return lat, long pair
 def getStartingLocation():
     response = requests.get("https://ipapi.co/json/").json()
+    
     return response['latitude'], response['longitude']
 
 def getCurrentWeather():
@@ -107,8 +108,8 @@ def getEvents():
     return {'Christmas Treasure Hunt': {'summary': 'Go on a Christmas adventure in Carlton Gardens.', 'event_date': '10 Dec', 'event_type': '\nFree\nFamily and kids\n'}, "New Year's Eve Twilight Dinner Package": {'summary': "Enjoy a dining and drinks package in Melbourne's 160-year-old historic cellar.", 'event_date': '31 Dec', 'event_type': '\nEvents\nFood and wine\n'}, 'Docklands Christmas Maze': {'summary': 'Find your holiday cheer at the giant Christmas maze, with amazing prizes to be won.', 'event_date': '29 Nov', 'event_type': '\nFree\nFamily and kids\n'}, 'Titanic: The Artefact Exhibition': {'summary': 'Explore human stories of the Titanic told through 200+ artefacts recovered from the legendary ship.', 'event_date': '16 Dec', 'event_type': '\nExhibition\nHistory\n'}, 'Eric Prydz: Holo': {'summary': 'Swedish producer Prydz brings his jaw-dropping Holo live show to Melbourne.', 'event_date': '8', 'event_type': '\nMusic\nEntertainment\n'}, 'NGV Architecture Commission: (This is) Air': {'summary': 'The NGV 2023 Architecture Commission is a large-scale installation that makes the invisible visible.', 'event_date': '23 Nov', 'event_type': '\nFree\nArt\n'}, 'Christmas Square': {'summary': 'Discover a Christmas wonderland featuring the city’s giant tree.', 'event_date': '24 Nov', 'event_type': '\nFree\nFamily and kids\n'}, 'Cirque du Soleil: Luzia': {'summary': 'Go on a vibrant journey through worlds filled with wonders and artistry with Cirque du Soleil.', 'event_date': '24 Mar', 'event_type': '\nTheatre\nDance\n'}}
     # return webscraper.melb_events()
 
-def directions(start, end, leave_time):
-    return
+#def directions(start, end, leave_time):
+    #return
     # return googlemaps.Client(key=st.secrets['gmaps_key']).directions(start, end, mode='transit', departure_time=leave_time)
 
 def getTrainDistruptions():
@@ -123,5 +124,5 @@ def getTrainDistruptions():
 OPTIONS = {'getStartingLocation': getStartingLocation, 
            'getCurrentWeather': getCurrentWeather, 
            'getTrainDistruptions': getTrainDistruptions,
-           'getEvents': getEvents,
-           'directions': directions} 
+           'getEvents': getEvents}
+           #'directions': directions} 
